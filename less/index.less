@@ -3,52 +3,74 @@
 }
 html {
     font-size: 62.5%;
+    font-family: 'Nunito', sans-serif;
 }
 h1 {
-    color: #F7E486;
+    font-size: 2.5rem;
 }
+
 body {
+    margin: 0 auto;
     .top {
         display: flex;
         flex-direction: column;
-        background-image: url("../assets/map.svg");
-        background-repeat: no-repeat;   
-        background-size: cover;
+        background-image: url("../assets/opaque-map.png");
+        background-color: #0A4699;
+        // background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        min-height: 600px;
+        height: 90vh;
         .greeting { 
             display: flex;
-            width: 50%;
-            height: 230px;
+            min-height: 230px;
             background-image: url("../assets/wave.svg");
+            background-image: url("../assets/Opaque\ 2nd\ layer.svg");
             background-repeat: no-repeat;
             h1 {
                 display: flex;
                 align-items: center;
-                margin-top: -20%;
-                margin-left: 5%;
+                // margin-top: -15%;
+                // margin-left: 5%;
                 color: #0A4699;
             }
             img {
                     display: flex;
                     align-items: center;
-                    margin-top: -20%;
-                    margin-left: 5%;
             }
 
         }
         .begin {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
+            align-items: center;
             .begin-text {
+                h1 {
+                    color: #F7E486;
+                    font-size: 3rem;
+                }
 
             }
             .begin-btns {
                 display: flex;
                 flex-direction: column;
+                margin: 10%;
                 button {
-                    margin: 10%;
+                    padding: 10px 40px;
+                    border: 1px solid #F7E486;
+                    border-radius: 6px;
+                    color: #F7E486;
+                    background-color: rgba(72,144,243,0);
+                    margin-top: 10%;
 
                 }
             }
         }
+    }
+    .middle {
+        background-image: url("../assets/middle_full_op.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }

@@ -3,45 +3,65 @@
 }
 html {
   font-size: 62.5%;
+  font-family: 'Nunito', sans-serif;
 }
 h1 {
-  color: #F7E486;
+  font-size: 2.5rem;
+}
+body {
+  margin: 0 auto;
 }
 body .top {
   display: flex;
   flex-direction: column;
-  background-image: url("../assets/map.svg");
+  background-image: url("../assets/opaque-map.png");
+  background-color: #0A4699;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
+  min-height: 600px;
+  height: 90vh;
 }
 body .top .greeting {
   display: flex;
-  width: 50%;
-  height: 230px;
+  min-height: 230px;
   background-image: url("../assets/wave.svg");
+  background-image: url("../assets/Opaque\ 2nd\ layer.svg");
   background-repeat: no-repeat;
 }
 body .top .greeting h1 {
   display: flex;
   align-items: center;
-  margin-top: -20%;
-  margin-left: 5%;
   color: #0A4699;
 }
 body .top .greeting img {
   display: flex;
   align-items: center;
-  margin-top: -20%;
-  margin-left: 5%;
 }
 body .top .begin {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+}
+body .top .begin .begin-text h1 {
+  color: #F7E486;
+  font-size: 3rem;
 }
 body .top .begin .begin-btns {
   display: flex;
   flex-direction: column;
+  margin: 10%;
 }
 body .top .begin .begin-btns button {
-  margin: 10%;
+  padding: 10px 40px;
+  border: 1px solid #F7E486;
+  border-radius: 6px;
+  color: #F7E486;
+  background-color: rgba(72, 144, 243, 0);
+  margin-top: 10%;
+}
+body .middle {
+  background-image: url("../assets/middle_full_op.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
