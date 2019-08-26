@@ -8,8 +8,12 @@ html {
 h1 {
   font-size: 2.5rem;
 }
+p {
+  font-size: 2rem;
+}
 body {
   margin: 0 auto;
+  background-color: #0A4699;
 }
 body .top {
   display: flex;
@@ -26,17 +30,14 @@ body .top .greeting {
   display: flex;
   min-height: 230px;
   background-image: url("../assets/wave.svg");
-  background-image: url("../assets/Opaque\ 2nd\ layer.svg");
   background-repeat: no-repeat;
 }
 body .top .greeting h1 {
-  display: flex;
-  align-items: center;
   color: #0A4699;
+  padding: 20px;
 }
 body .top .greeting img {
-  display: flex;
-  align-items: center;
+  margin-bottom: 120px;
 }
 body .top .begin {
   display: flex;
@@ -45,7 +46,7 @@ body .top .begin {
 }
 body .top .begin .begin-text h1 {
   color: #F7E486;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 body .top .begin .begin-btns {
   display: flex;
@@ -59,9 +60,28 @@ body .top .begin .begin-btns button {
   color: #F7E486;
   background-color: rgba(72, 144, 243, 0);
   margin-top: 10%;
+  font-size: 1.7rem;
 }
 body .middle {
   background-image: url("../assets/middle_full_op.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .middle .p-container {
+  margin: 10%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+}
+body .middle .p-container p {
+  border: 1px solid #1A52A0;
+  border-radius: 6px;
+  background-color: white;
+  padding: 5%;
+}
+body .middle .p-container img {
+  padding-left: 40%;
 }
