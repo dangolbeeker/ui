@@ -12,4 +12,76 @@
   &.hidden {
     transform: translate3d(0, -100%, 0);
   }
+  span.logo {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+// main header
+header {
+  background-image: url('../assets/map.svg');
+  background-color: @main-blue;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center right;
+  nav {
+    .site-title {
+      position: relative;
+      height: 180px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding-top: 10px;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../assets/small-wave.svg');
+        background-repeat: no-repeat;
+        background-size: 105%;
+        background-position: -20px center;
+      }
+      &::before {
+        z-index: 1;
+        top: 23px;
+        background-size: 100%;
+        opacity: 0.75;
+        left: 0px;
+      }
+      &::after {
+        z-index: 2;
+      }
+
+      a {
+        position: relative;
+        z-index: 10;
+        color: @main-blue;
+        text-decoration: none;
+        height: 52px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1 {
+          font-size: 2.3rem;
+          font-weight: 400;
+          padding: 0px 25px;
+          padding-top: 9px;
+        }
+      }
+
+      span.logo {
+        position: relative;
+        z-index: 10;
+        width: 100px;
+        height: 52px;
+      }
+    }
+  }
 }
