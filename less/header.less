@@ -20,16 +20,18 @@
 
 // main header
 header {
-  background-image: url('../assets/map.svg');
+  background-image: url('../assets/map-yellow.png');
   background-color: @main-blue;
-  background-blend-mode: multiply;
+  // background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center right;
+
   nav {
     .site-title {
       position: relative;
       height: 180px;
+      max-width: 433px;
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
@@ -83,5 +85,10 @@ header {
         height: 52px;
       }
     }
+  } // end nav
+}
+.cta-content {
+  h2 {
+    margin: 25px 0;
   }
 }
