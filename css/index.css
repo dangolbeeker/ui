@@ -126,3 +126,57 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+header {
+  background-image: url(../assets/yellowmap.png);
+  background-color: #0A4699;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+header #logoContainer {
+  display: flex;
+  font-size: 2rem;
+  height: 29vh;
+  width: 42%;
+  background-image: url(../assets/wave.svg), url(../assets/wave2.svg);
+  background-repeat: no-repeat;
+  background-size: auto, 94% 105%;
+}
+header #logoContainer p {
+  padding: 7% 0 0 4%;
+  color: #0A4699;
+}
+header #logoContainer img {
+  margin: 0 0 40% 2%;
+  padding: 0 0 0 0;
+}
+header h1 {
+  color: #F7E486;
+  font-size: 3rem;
+  margin: 0 0 0 10%;
+  padding: 1%;
+}
+header #btn1 {
+  display: flex;
+  font-size: 1rem;
+  background: #F7E486;
+  color: #0A4699;
+  width: 10%;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5% 5%;
+  border-radius: 5px;
+  margin: 0 0 2% 55%;
+}
+header #btn2 {
+  display: flex;
+  font-size: 1rem;
+  background: #0A4699;
+  color: #F7E486;
+  width: 10%;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5% 5%;
+  border-radius: 5px;
+  border: 1px solid #F7E486;
+  margin: 0 0 0 55%;
+}
