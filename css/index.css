@@ -12,6 +12,9 @@
   font-display: swap;
   src: local('Nunito Bold'), local('Nunito-Bold'), url(https://fonts.gstatic.com/s/nunito/v11/XRXW3I6Li01BKofAjsOUYevN.ttf) format('truetype');
 }
+.break {
+  display: block;
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -455,11 +458,57 @@ header nav .site-title span.logo {
   width: 100px;
   height: 52px;
 }
+header .cta-content {
+  padding-bottom: 25px;
+}
 header .cta-content h2 {
   margin-top: 50px;
+  margin-bottom: 25px;
+  color: #fff2b3;
+  font-weight: 400;
 }
 header .cta-content div {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+}
+header .cta-content div .btn {
+  margin: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+header .cta-content div .btn.signup {
+  border: 2px solid #fff2b3;
+  outline: none;
+  color: #0a4699;
+  background-color: #fff2b3;
+  padding: 10px;
+  border-radius: 3px;
+  width: 200px;
+  transition: 200ms;
+}
+header .cta-content div .btn.signup:focus {
+  box-shadow: 0 0 3px 0 #a55;
+}
+header .cta-content div .btn.signup:hover {
+  cursor: pointer;
+  box-shadow: 0 0 3px 0 #a55;
+}
+header .cta-content div .btn.signin {
+  border: 2px solid #fff2b3;
+  outline: none;
+  color: #fff2b3;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 3px;
+  width: 200px;
+  transition: 200ms;
+}
+header .cta-content div .btn.signin:focus {
+  box-shadow: 0 0 3px 0 #a55;
+}
+header .cta-content div .btn.signin:hover {
+  cursor: pointer;
+  box-shadow: 0 0 3px 0 #a55;
 }
