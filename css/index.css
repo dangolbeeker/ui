@@ -455,6 +455,11 @@ header nav .site-title span.logo {
   width: 100px;
   height: 52px;
 }
-.cta-content h2 {
-  margin: 25px 0;
+header .cta-content h2 {
+  margin-top: 50px;
+}
+header .cta-content div {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
