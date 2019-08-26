@@ -354,3 +354,17 @@ p {
     opacity: 1;
   }
 }
+.top-nav {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: 200ms;
+  transform: translate3d(0, 0, 0);
+}
+.top-nav.hidden {
+  transform: translate3d(0, -100%, 0);
+}

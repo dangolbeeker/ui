@@ -1,0 +1,15 @@
+// sticky navbar
+.top-nav {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: @standard;
+  transform: translate3d(0, 0, 0);
+  &.hidden {
+    transform: translate3d(0, -100%, 0);
+  }
+}
