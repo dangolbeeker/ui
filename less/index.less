@@ -42,9 +42,10 @@ body {
         }
         .greeting { 
             display: flex;
-            min-height: 230px;
-            background-image: url("../assets/wave.svg");
+            min-height: 300px;
+            background-image: url("../assets/wave.svg"), url("../assets/wave-opaque.svg");
             background-repeat: no-repeat;
+            background-size: auto, 450px, 300px;
             @media @mobile {
             }
             h1 {
@@ -272,10 +273,11 @@ body {
             .icons {
                 display: flex;
                 img {
-                    max-width: 50px;
+                    height: 50px;
+                    width: 50px;
                     padding: 10%;
                     @media @mobile {
-                        padding: 0 3%;
+                        padding: 0 3%;  
                     }
                 }
             }

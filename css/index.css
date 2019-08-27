@@ -45,9 +45,10 @@ body .top {
 }
 body .top .greeting {
   display: flex;
-  min-height: 230px;
-  background-image: url("../assets/wave.svg");
+  min-height: 300px;
+  background-image: url("../assets/wave.svg"), url("../assets/wave-opaque.svg");
   background-repeat: no-repeat;
+  background-size: auto, 450px, 300px;
 }
 body .top .greeting h1 {
   color: #0A4699;
@@ -297,7 +298,8 @@ body .contact-container .social .icons {
   display: flex;
 }
 body .contact-container .social .icons img {
-  max-width: 50px;
+  height: 50px;
+  width: 50px;
   padding: 10%;
 }
 @media (max-width: 500px) {
