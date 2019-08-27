@@ -709,3 +709,9 @@ main .main-content .testimonials .btn.signup:hover {
   cursor: pointer;
   box-shadow: 0 0 3px 0 #a55;
 }
+.copyright {
+  color: #fff2b3;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 1.2rem;
+}

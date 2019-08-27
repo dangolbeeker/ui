@@ -143,8 +143,14 @@
             </div>
           </section>
         </div>
+        <p class="copyright">Copyright &copy; <span id="date"></span>Conjugator. All rights reserved.</p>
       </footer>
     </div>
     <script src="https://kit.fontawesome.com/3a8eb1f6d9.js"></script>
+    <script>
+      let d = new Date();
+      const copyrightElement = document.getElementById('date');
+      copyrightElement.textContent = `${d.getFullYear()} `;
+    </script>
   </body>
 </html>
