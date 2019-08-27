@@ -575,6 +575,44 @@ main .main-content .gator-quote {
 }
 main .main-content .gator-quote::before {
   content: '';
+  background-image: url('../assets/rounded-border-top-users.svg');
+  background-position: -80px 0;
+  background-size: 140%;
+  background-repeat: no-repeat;
+  height: 50px;
+  top: -50px;
+  width: 100%;
+  position: absolute;
+}
+main .main-content .gator-quote .rounded-border {
+  background-color: transparent;
+  position: relative;
+}
+main .main-content .gator-quote .rounded-border::before,
+main .main-content .gator-quote .rounded-border::after {
+  content: '';
+  opacity: 0.95;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -15%;
+  width: 130%;
+  background-image: url('../assets/rounded-border.svg');
+}
+main .main-content .gator-quote .rounded-border::before {
+  content: '';
+  background-position: -160px 18px;
+  background-size: 100%;
+  height: 80px;
+  top: -100px;
+  transform: rotate(-5deg);
+}
+main .main-content .gator-quote .rounded-border::after {
+  content: '';
+  background-position: 130px 18px;
+  background-size: 120%;
+  height: 80px;
+  top: -100px;
+  transform: rotate(5deg);
 }
 main .main-content .gator-quote div p {
   padding: 10px;
