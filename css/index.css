@@ -1,3 +1,17 @@
+.greeting {
+  display: flex;
+  min-height: 300px;
+  background-image: url("../assets/wave.svg"), url("../assets/wave-opaque.svg");
+  background-repeat: no-repeat;
+  background-size: auto, 450px, 300px;
+}
+.greeting h1 {
+  color: #0A4699;
+  padding: 20px;
+}
+.greeting img {
+  margin-bottom: 120px;
+}
 * {
   box-sizing: border-box;
 }
@@ -10,11 +24,11 @@ h1 {
 }
 h2 {
   font-size: 2.2rem;
-  color: #1A52A0;
+  color: #0A4699;
 }
 p {
   font-size: 2rem;
-  color: #1A52A0;
+  color: #0A4699;
 }
 body {
   max-width: 100%;
@@ -42,20 +56,6 @@ body .top {
   body .top {
     margin-bottom: 10%;
   }
-}
-body .top .greeting {
-  display: flex;
-  min-height: 300px;
-  background-image: url("../assets/wave.svg"), url("../assets/wave-opaque.svg");
-  background-repeat: no-repeat;
-  background-size: auto, 450px, 300px;
-}
-body .top .greeting h1 {
-  color: #0A4699;
-  padding: 20px;
-}
-body .top .greeting img {
-  margin-bottom: 120px;
 }
 body .top .begin {
   display: flex;
@@ -104,7 +104,7 @@ body .middle .p-container {
   margin-top: 15%;
 }
 body .middle .p-container p {
-  border: 1px solid #1A52A0;
+  border: 1px solid #0A4699;
   border-radius: 6px;
   background-color: white;
   padding: 5%;
@@ -201,7 +201,7 @@ body .middle .middle-b .testimonials {
   }
 }
 body .middle .middle-b .testimonials p {
-  color: #1A52A0;
+  color: #0A4699;
   margin-bottom: 0;
   padding: 20px;
 }
@@ -243,6 +243,7 @@ body .middle .btn-container {
   display: flex;
   justify-content: center;
   margin-top: 10%;
+  margin-bottom: 3%;
 }
 @media (max-width: 500px) {
   body .middle .btn-container {
@@ -252,10 +253,10 @@ body .middle .btn-container {
 }
 body .middle .btn-container button {
   padding: 10px 40px;
-  border: 1px solid #1A52A0;
+  border: 1px solid #0A4699;
   border-radius: 6px;
   color: #F7E486;
-  background-color: #1A52A0;
+  background-color: #0A4699;
   margin: 0;
   font-size: 1.7rem;
 }
