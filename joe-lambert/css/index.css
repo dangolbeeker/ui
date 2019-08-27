@@ -583,7 +583,7 @@ main .main-content .selling-points section h3 {
 main .main-content .selling-points section p {
   width: 100%;
   margin: 15px 0;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   padding-right: 25px;
 }
 main .main-content .testimonials {
@@ -592,7 +592,25 @@ main .main-content .testimonials {
 main .main-content .testimonials figure {
   padding: 10px;
 }
-main .main-content .testimonials h3 {
+main .main-content .testimonials div {
   background-color: #0a4699;
+  display: flex;
+  justify-content: center;
+  padding-top: 35px;
+  padding-bottom: 45px;
+}
+main .main-content .testimonials div h3 {
   color: #fff2b3;
+  font-weight: 400;
+  margin: 0 auto;
+  position: relative;
+}
+main .main-content .testimonials div h3::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 1px;
+  background-color: #fff2b3;
+  bottom: -15px;
 }

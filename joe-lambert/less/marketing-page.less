@@ -82,9 +82,28 @@ main {
         padding: 10px;
       }
 
-      h3 {
+      div {
         background-color: @main-blue;
-        color: @main-yellow;
+        display: flex;
+        justify-content: center;
+        padding-top: 35px;
+        padding-bottom: 45px;
+
+        h3 {
+          color: @main-yellow;
+          font-weight: 400;
+          margin: 0 auto;
+          position: relative;
+          &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            left: 0;
+            height: 1px;
+            background-color: @main-yellow;
+            bottom: -15px;
+          }
+        }
       }
     } // end .testimonials
   } // end .main-content
