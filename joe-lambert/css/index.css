@@ -487,7 +487,7 @@ header .cta-content div .btn.signup {
   color: #0a4699;
   background-color: #fff2b3;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 6px;
   width: 200px;
   transition: 200ms;
 }
@@ -504,7 +504,7 @@ header .cta-content div .btn.signin {
   color: #fff2b3;
   background-color: transparent;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 6px;
   width: 200px;
   transition: 200ms;
 }
