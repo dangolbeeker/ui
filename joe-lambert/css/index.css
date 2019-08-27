@@ -573,6 +573,9 @@ main .main-content .gator-quote {
   position: relative;
   background-color: #fff2b3;
 }
+main .main-content .gator-quote::before {
+  content: '';
+}
 main .main-content .gator-quote div p {
   padding: 10px;
   margin: 10px;
