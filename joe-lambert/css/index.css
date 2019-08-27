@@ -604,7 +604,7 @@ main .main-content .gator-quote .rounded-border::before {
   background-size: 100%;
   height: 80px;
   top: -100px;
-  transform: rotate(-5deg);
+  transform: rotate(-8deg);
 }
 main .main-content .gator-quote .rounded-border::after {
   content: '';
@@ -612,7 +612,7 @@ main .main-content .gator-quote .rounded-border::after {
   background-size: 120%;
   height: 80px;
   top: -100px;
-  transform: rotate(5deg);
+  transform: rotate(8deg);
 }
 main .main-content .gator-quote div p {
   padding: 10px;
