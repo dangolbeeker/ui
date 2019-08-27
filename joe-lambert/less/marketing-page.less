@@ -1,1 +1,50 @@
-// border mixin
+main {
+  .main-content {
+    padding: 10px;
+
+    .gator-quote {
+      display: flex;
+      flex-flow: column wrap;
+      position: relative;
+      div {
+        p {
+          padding: 10px;
+          border: 0.2rem solid @main-blue;
+          border-radius: 9px;
+        }
+        .triangle {
+          position: absolute;
+          right: 145px;
+          bottom: 65px;
+          &::before,
+          &::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-color: transparent;
+            border-bottom: 0;
+          }
+          &::before {
+            bottom: -1.8rem;
+            left: 1.8rem;
+            border-top-color: @main-blue;
+            border-width: 1.8rem;
+          }
+          &::after {
+            bottom: -1.5rem;
+            left: 2rem;
+            border-top-color: #fff;
+            border-width: 1.6rem;
+          }
+        }
+      }
+      span.logo {
+        width: 100px;
+        height: 65px;
+        margin-left: auto;
+      }
+    } // end .gator-quote
+  } // end .main-content
+} // end main
