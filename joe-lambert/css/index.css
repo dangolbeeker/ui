@@ -629,7 +629,7 @@ main .main-content .gator-quote div p {
 main .main-content .gator-quote div .triangle {
   position: absolute;
   right: 145px;
-  bottom: 67px;
+  bottom: 2px;
 }
 main .main-content .gator-quote div .triangle::before,
 main .main-content .gator-quote div .triangle::after {
