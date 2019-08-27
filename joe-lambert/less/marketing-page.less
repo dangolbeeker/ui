@@ -33,6 +33,12 @@ main {
       .rounded-border {
         background-color: transparent;
         position: relative;
+        @media @tablet {
+          margin-bottom: 50px;
+        }
+        @media @tablet-large {
+          margin-bottom: 100px;
+        }
 
         &::before,
         &::after {
@@ -117,6 +123,14 @@ main {
             margin-right: 75px;
             margin-left: 75px;
           }
+          @media @desktop {
+            margin-right: 100px;
+            margin-left: 100px;
+          }
+          @media @desktop-large {
+            margin-right: 160px;
+            margin-left: 160px;
+          }
         }
         .triangle {
           position: absolute;
@@ -124,6 +138,9 @@ main {
           bottom: 2px;
           @media @tablet-large {
             right: 225px;
+          }
+          @media @desktop-large {
+            right: 355px;
           }
           &::before,
           &::after {
@@ -152,14 +169,15 @@ main {
       span.logo {
         width: 100px;
         height: 65px;
-        margin-left: auto;
-        margin-right: 10px;
+        right: 10px;
+        float: right;
         position: relative;
         z-index: 5;
         @media @tablet-large {
-          width: 162px;
-          height: 86px;
-          margin-right: 40px;
+          right: 10%;
+        }
+        @media @desktop-large {
+          right: 18%;
         }
       }
     } // end .gator-quote
@@ -173,7 +191,7 @@ main {
         padding-top: 125px;
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: flex-start;
       }
 
@@ -223,7 +241,7 @@ main {
       @media @tablet-large {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-evenly;
+        justify-content: center;
         padding-bottom: 90px;
       }
 
@@ -232,44 +250,82 @@ main {
         display: flex;
         justify-content: center;
         position: relative;
-        padding-top: 65px;
-        padding-bottom: 85px;
+        padding: 90px 0;
         width: 100%;
-
-        &::before,
         &::after {
           content: '';
-          background-image: url('../assets/rounded-border-top-users.svg');
-          background-position: 0 0;
-          background-size: 100%;
-          background-repeat: no-repeat;
           position: absolute;
-          width: 100%;
-          left: 0;
-          height: 100px;
-          z-index: 0;
+          width: 200px;
+          height: 1px;
+          background-color: @main-yellow;
+          bottom: 65px;
         }
-        &::before {
-          top: -75px;
-          transform: rotate(180deg);
+        @media screen and (min-width: 684px) {
+          padding: 120px 0;
+          &::after {
+            bottom: 85px;
+          }
         }
-        &::after {
-          bottom: -70px;
+        @media screen and (min-width: 844px) {
+          padding: 140px 0;
+          &::after {
+            bottom: 105px;
+          }
+        }
+        @media screen and (min-width: 1152px) {
+          padding: 160px 0;
+          &::after {
+            bottom: 125px;
+          }
+        }
+        @media screen and (min-width: 1400px) {
+          padding: 180px 0;
+          &::after {
+            bottom: 145px;
+          }
         }
 
         h3 {
           color: @main-yellow;
           font-weight: 400;
-          margin: 0 auto;
+          width: 100%;
+          text-align: center;
           position: relative;
+          &::before,
           &::after {
             content: '';
+            background-image: url('../assets/rounded-border-top-users.svg');
+            background-position: 0 0;
+            background-size: cover;
+            background-repeat: no-repeat;
             position: absolute;
             width: 100%;
             left: 0;
-            height: 1px;
-            background-color: @main-yellow;
-            bottom: -15px;
+            height: 100px;
+            z-index: 0;
+          }
+          &::before {
+            top: -145px;
+            transform: rotate(180deg);
+          }
+          &::after {
+            bottom: -145px;
+          }
+          @media screen and (min-width: 684px) {
+            &::before {
+              top: -165px;
+            }
+            &::after {
+              bottom: -165px;
+            }
+          }
+          @media screen and (min-width: 1400px) {
+            &::before {
+              top: -180px;
+            }
+            &::after {
+              bottom: -180px;
+            }
           }
         }
       }

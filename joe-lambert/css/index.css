@@ -366,6 +366,10 @@ p {
   margin: 0 auto;
   background-color: #0a4699;
 }
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 span.logo {
   display: inline-flex;
   text-indent: -9999px;
@@ -636,6 +640,16 @@ main .main-content .gator-quote .rounded-border {
   background-color: transparent;
   position: relative;
 }
+@media screen and (min-width: 700px) {
+  main .main-content .gator-quote .rounded-border {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 900px) {
+  main .main-content .gator-quote .rounded-border {
+    margin-bottom: 100px;
+  }
+}
 main .main-content .gator-quote .rounded-border::before,
 main .main-content .gator-quote .rounded-border::after {
   content: '';
@@ -724,6 +738,18 @@ main .main-content .gator-quote div p {
     margin-left: 75px;
   }
 }
+@media screen and (min-width: 1024px) {
+  main .main-content .gator-quote div p {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main .main-content .gator-quote div p {
+    margin-right: 160px;
+    margin-left: 160px;
+  }
+}
 main .main-content .gator-quote div .triangle {
   position: absolute;
   right: 145px;
@@ -732,6 +758,11 @@ main .main-content .gator-quote div .triangle {
 @media screen and (min-width: 900px) {
   main .main-content .gator-quote div .triangle {
     right: 225px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main .main-content .gator-quote div .triangle {
+    right: 355px;
   }
 }
 main .main-content .gator-quote div .triangle::before,
@@ -759,16 +790,19 @@ main .main-content .gator-quote div .triangle::after {
 main .main-content .gator-quote span.logo {
   width: 100px;
   height: 65px;
-  margin-left: auto;
-  margin-right: 10px;
+  right: 10px;
+  float: right;
   position: relative;
   z-index: 5;
 }
 @media screen and (min-width: 900px) {
   main .main-content .gator-quote span.logo {
-    width: 162px;
-    height: 86px;
-    margin-right: 40px;
+    right: 10%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main .main-content .gator-quote span.logo {
+    right: 18%;
   }
 }
 main .main-content .selling-points {
@@ -783,7 +817,7 @@ main .main-content .selling-points {
     padding-top: 125px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: flex-start;
   }
 }
@@ -834,7 +868,7 @@ main .main-content .testimonials {
   main .main-content .testimonials {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     padding-bottom: 90px;
   }
 }
@@ -843,16 +877,62 @@ main .main-content .testimonials div {
   display: flex;
   justify-content: center;
   position: relative;
-  padding-top: 65px;
-  padding-bottom: 85px;
+  padding: 90px 0;
   width: 100%;
 }
-main .main-content .testimonials div::before,
 main .main-content .testimonials div::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 1px;
+  background-color: #fff2b3;
+  bottom: 65px;
+}
+@media screen and (min-width: 684px) {
+  main .main-content .testimonials div {
+    padding: 120px 0;
+  }
+  main .main-content .testimonials div::after {
+    bottom: 85px;
+  }
+}
+@media screen and (min-width: 844px) {
+  main .main-content .testimonials div {
+    padding: 140px 0;
+  }
+  main .main-content .testimonials div::after {
+    bottom: 105px;
+  }
+}
+@media screen and (min-width: 1152px) {
+  main .main-content .testimonials div {
+    padding: 160px 0;
+  }
+  main .main-content .testimonials div::after {
+    bottom: 125px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  main .main-content .testimonials div {
+    padding: 180px 0;
+  }
+  main .main-content .testimonials div::after {
+    bottom: 145px;
+  }
+}
+main .main-content .testimonials div h3 {
+  color: #fff2b3;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+main .main-content .testimonials div h3::before,
+main .main-content .testimonials div h3::after {
   content: '';
   background-image: url('../assets/rounded-border-top-users.svg');
   background-position: 0 0;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
   width: 100%;
@@ -860,27 +940,28 @@ main .main-content .testimonials div::after {
   height: 100px;
   z-index: 0;
 }
-main .main-content .testimonials div::before {
-  top: -75px;
+main .main-content .testimonials div h3::before {
+  top: -145px;
   transform: rotate(180deg);
 }
-main .main-content .testimonials div::after {
-  bottom: -70px;
-}
-main .main-content .testimonials div h3 {
-  color: #fff2b3;
-  font-weight: 400;
-  margin: 0 auto;
-  position: relative;
-}
 main .main-content .testimonials div h3::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  left: 0;
-  height: 1px;
-  background-color: #fff2b3;
-  bottom: -15px;
+  bottom: -145px;
+}
+@media screen and (min-width: 684px) {
+  main .main-content .testimonials div h3::before {
+    top: -165px;
+  }
+  main .main-content .testimonials div h3::after {
+    bottom: -165px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  main .main-content .testimonials div h3::before {
+    top: -180px;
+  }
+  main .main-content .testimonials div h3::after {
+    bottom: -180px;
+  }
 }
 main .main-content .testimonials figure {
   padding: 10px;
