@@ -464,16 +464,51 @@ header nav .site-title span.logo {
 header .cta-content {
   padding-bottom: 25px;
 }
+@media screen and (min-width: 700px) {
+  header .cta-content {
+    padding-bottom: 50px;
+    padding-right: 10vw;
+  }
+}
+@media screen and (min-width: 900px) {
+  header .cta-content {
+    padding-bottom: 100px;
+    padding-right: 20vw;
+    padding-left: 10vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header .cta-content {
+    padding-right: 25vw;
+  }
+}
 header .cta-content h2 {
   margin-top: 50px;
   margin-bottom: 35px;
+  margin-left: 25px;
   color: #fff2b3;
   font-weight: 400;
+}
+@media screen and (min-width: 700px) {
+  header .cta-content h2 {
+    font-size: 3.6rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .cta-content h2 {
+    font-size: 4.8rem;
+  }
 }
 header .cta-content div {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+}
+@media screen and (min-width: 700px) {
+  header .cta-content div {
+    align-items: flex-end;
+    transform: translate3d(0, -92px, 0);
+  }
 }
 header .cta-content div .btn {
   margin: 10px 0;
@@ -577,13 +612,25 @@ main .main-content .gator-quote {
 main .main-content .gator-quote::before {
   content: '';
   background-image: url('../assets/rounded-border-top-users.svg');
-  background-position: -80px 0;
-  background-size: 140%;
+  background-position: 0 0;
+  background-size: 100%;
   background-repeat: no-repeat;
   height: 50px;
   top: -50px;
   width: 100%;
   position: absolute;
+}
+@media screen and (min-width: 764px) {
+  main .main-content .gator-quote::before {
+    top: -65px;
+    height: 65px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  main .main-content .gator-quote::before {
+    top: -85px;
+    height: 86px;
+  }
 }
 main .main-content .gator-quote .rounded-border {
   background-color: transparent;
@@ -594,24 +641,58 @@ main .main-content .gator-quote .rounded-border::after {
   content: '';
   background-repeat: no-repeat;
   position: absolute;
-  left: -26%;
-  width: 140%;
+  width: 100%;
   background-image: url('../assets/rounded-border.svg');
-  height: 200px;
-  top: -105px;
+  background-size: 100%;
+  height: 250px;
+  top: -78px;
   z-index: 0;
 }
 main .main-content .gator-quote .rounded-border::before {
   content: '';
-  background-position: -160px 18px;
-  background-size: 100%;
-  transform: rotate(-6deg);
+  background-position: -100px 0;
 }
 main .main-content .gator-quote .rounded-border::after {
   content: '';
-  background-position: 130px 18px;
-  background-size: 120%;
-  transform: rotate(6deg);
+  background-position: 100px 0;
+}
+@media screen and (min-width: 416px) {
+  main .main-content .gator-quote .rounded-border::before {
+    background-position: -120px 0;
+  }
+  main .main-content .gator-quote .rounded-border::after {
+    background-position: 120px 0;
+  }
+}
+@media screen and (min-width: 578px) {
+  main .main-content .gator-quote .rounded-border::before {
+    background-position: -130px 0;
+  }
+  main .main-content .gator-quote .rounded-border::after {
+    background-position: 130px 0;
+  }
+}
+@media screen and (min-width: 764px) {
+  main .main-content .gator-quote .rounded-border {
+    top: -10px;
+  }
+  main .main-content .gator-quote .rounded-border::before {
+    background-position: -165px 0;
+  }
+  main .main-content .gator-quote .rounded-border::after {
+    background-position: 165px 0;
+  }
+}
+@media screen and (min-width: 1000px) {
+  main .main-content .gator-quote .rounded-border {
+    top: -40px;
+  }
+  main .main-content .gator-quote .rounded-border::before {
+    background-position: -185px 0;
+  }
+  main .main-content .gator-quote .rounded-border::after {
+    background-position: 185px 0;
+  }
 }
 main .main-content .gator-quote div {
   position: relative;
@@ -656,6 +737,9 @@ main .main-content .gator-quote span.logo {
   width: 100px;
   height: 65px;
   margin-left: auto;
+  margin-right: 10px;
+  position: relative;
+  z-index: 5;
 }
 main .main-content .selling-points {
   background-color: #fff2b3;
