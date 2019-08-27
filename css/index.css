@@ -125,27 +125,43 @@ body .middle .middle-a .descriptions .goals {
 }
 body .middle .users h2 {
   color: #F7E486;
+  font-size: 2.6rem;
+  padding: 10px;
+  border-bottom: 1px solid;
 }
-body .testimonials {
+body .middle .middle-b {
+  background-image: url("../assets/Rounded\ border\ testimonials\ .svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 800px;
+}
+body .middle .middle-b .testimonials {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 15% 0;
 }
-body .testimonials p {
-  color: #F7E486;
+body .middle .middle-b .testimonials p {
+  color: #1A52A0;
   margin-bottom: 0;
+  padding: 10px;
 }
-body .testimonials img {
+body .middle .middle-b .testimonials img {
   margin: 0 60%;
   border: 0px solid black;
   border-radius: 100%;
 }
-body .testimonials .jennifer {
+body .middle .middle-b .testimonials .jennifer {
   width: 30%;
 }
-body .testimonials .joey {
+body .middle .middle-b .testimonials .joey {
   width: 30%;
 }
-body .testimonials .trey {
+body .middle .middle-b .testimonials .trey {
   width: 30%;
+}
+body .middle .btn-container {
+  display: flex;
+  justify-content: center;
 }
