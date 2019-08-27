@@ -592,7 +592,6 @@ main .main-content .gator-quote .rounded-border {
 main .main-content .gator-quote .rounded-border::before,
 main .main-content .gator-quote .rounded-border::after {
   content: '';
-  opacity: 0.95;
   background-repeat: no-repeat;
   position: absolute;
   left: -26%;
@@ -699,8 +698,29 @@ main .main-content .testimonials div {
   background-color: #0a4699;
   display: flex;
   justify-content: center;
-  padding-top: 35px;
-  padding-bottom: 45px;
+  position: relative;
+  padding-top: 65px;
+  padding-bottom: 85px;
+}
+main .main-content .testimonials div::before,
+main .main-content .testimonials div::after {
+  content: '';
+  background-image: url('../assets/rounded-border-top-users.svg');
+  background-position: 0 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 100px;
+  z-index: 0;
+}
+main .main-content .testimonials div::before {
+  top: -75px;
+  transform: rotate(180deg);
+}
+main .main-content .testimonials div::after {
+  bottom: -70px;
 }
 main .main-content .testimonials div h3 {
   color: #fff2b3;
@@ -724,6 +744,8 @@ main .main-content .testimonials figure {
   align-items: center;
   font-size: 1.6rem;
   margin: 20px 0;
+  position: relative;
+  z-index: 5;
 }
 main .main-content .testimonials figure:first-of-type {
   margin-top: 35px;

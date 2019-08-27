@@ -27,7 +27,6 @@ main {
         &::before,
         &::after {
           content: '';
-          opacity: 0.95;
           background-repeat: no-repeat;
           position: absolute;
           left: -26%;
@@ -142,8 +141,30 @@ main {
         background-color: @main-blue;
         display: flex;
         justify-content: center;
-        padding-top: 35px;
-        padding-bottom: 45px;
+        position: relative;
+        padding-top: 65px;
+        padding-bottom: 85px;
+
+        &::before,
+        &::after {
+          content: '';
+          background-image: url('../assets/rounded-border-top-users.svg');
+          background-position: 0 0;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          position: absolute;
+          width: 100%;
+          left: 0;
+          height: 100px;
+          z-index: 0;
+        }
+        &::before {
+          top: -75px;
+          transform: rotate(180deg);
+        }
+        &::after {
+          bottom: -70px;
+        }
 
         h3 {
           color: @main-yellow;
@@ -169,6 +190,8 @@ main {
         align-items: center;
         font-size: 1.6rem;
         margin: 20px 0;
+        position: relative;
+        z-index: 5;
         &:first-of-type {
           margin-top: 35px;
           margin-bottom: 0;
