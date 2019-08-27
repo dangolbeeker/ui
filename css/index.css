@@ -126,14 +126,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+body {
+  font-family: 'Nunito', sans-serif;
+}
 header {
-  background-image: url(../assets/yellowmap.png), url(../assets/topround.svg), url(../assets/topopache.svg), url(../assets/topopache.svg);
+  background-image: url(../assets/yellowmap.png), url(../assets/longbubble.svg), url(../assets/topround.svg), url(../assets/topopache.svg), url(../assets/topopache.svg), url(../assets/Rounded.svg);
   background-color: #0A4699;
   background-repeat: no-repeat;
-  background-position: 167% 0%, 50% 40%, 100% 35%, 0 35%;
+  background-position: 167% 0%, 50% 35%, 50% 30%, 100% 25%, 0 25%, 50% 85%;
   background-attachment: scroll;
-  background-size: auto, 100% 75%, 65% 75%, 65% 75%;
-  height: 300vh;
+  background-size: auto, 70% 25%, 100% 75%, 65% 75%, 65% 75%, 100%;
+  height: 325vh;
 }
 header #logoContainer {
   display: flex;
@@ -160,7 +163,7 @@ header h1 {
 }
 header #btn1 {
   display: flex;
-  font-size: 1rem;
+  font-size: 1.25rem;
   background: #F7E486;
   color: #0A4699;
   width: 10%;
@@ -172,7 +175,7 @@ header #btn1 {
 }
 header #btn2 {
   display: flex;
-  font-size: 1rem;
+  font-size: 1.25rem;
   background: #0A4699;
   color: #F7E486;
   width: 10%;
@@ -197,23 +200,122 @@ header .about #aboutTop {
   border-radius: 5px;
 }
 header .about #aboutTop p {
-  border: 2px solid #0A4699;
+  width: 85%;
+  margin: 7% 7% 0 0;
+  font-size: 1.25rem;
   color: #0A4699;
-  background: white;
-  font-size: 1.55rem;
-  line-height: 2rem;
-  border-radius: 5px;
-  padding: 5% 2.5% 2.5% 2.5%;
-}
-header .about #aboutTop #triangle {
-  color: white;
-  background: white;
-  width: 10%;
-  margin: 0 15% 0 0;
-  height: 75%;
-  clip-path: polygon(50% 100%, 25% 0, 75% 0);
-  border: 2px solid white;
 }
 header .about #aboutTop img {
-  margin: 2% 0 0 0;
+  margin: 5% 7% 0 0;
+}
+header .about #aboutBottom {
+  height: 40vh;
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5% auto 0 auto;
+  padding: 5% 0 0 0;
+  border-top: 2px solid #0A4699;
+}
+header .about #aboutBottom .bottomInfo {
+  width: 30%;
+}
+header .about #aboutBottom .bottomInfo h3 {
+  font-size: 1.75rem;
+  padding: 0 0 0 11%;
+}
+header .about #aboutBottom .bottomInfo h3 img {
+  margin: 0 0 0 1%;
+}
+header .about #aboutBottom .bottomInfo p {
+  margin: 5% 0 0 0;
+  padding: 0 0 0 11%;
+  width: 85%;
+  font-size: 1.25rem;
+}
+header #middleText {
+  margin: 12% auto 0 auto;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #FFF2B3;
+  border-bottom: 2px solid #FFF2B3;
+  width: 22.5%;
+  padding: 0 0 2% 0;
+}
+header #userFeedBack {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  height: 30vh;
+  margin: 7.5% auto 0 auto;
+}
+header #userFeedBack .person {
+  width: 30%;
+  font-size: 1.25rem;
+}
+header #userFeedBack .person p {
+  width: 85%;
+  padding: 5% 0 0 11%;
+}
+header #userFeedBack .person p img {
+  border-radius: 50px;
+  width: 25%;
+  height: auto;
+  padding: auto;
+  margin: 0 0 0 3%;
+}
+header #bottomBtn {
+  display: flex;
+  font-size: 1.25rem;
+  background: #0A4699;
+  color: #F7E486;
+  width: 10%;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5% 5%;
+  border-radius: 5px;
+  margin: 7.5% auto 0 auto;
+}
+header .contactInfo {
+  display: flex;
+  width: 90%;
+  height: 25vh;
+  margin: 12.5% auto 0 auto;
+  color: #FFF2B3;
+  font-size: 1.25rem;
+}
+header .contactInfo #contact {
+  display: flex;
+}
+header .contactInfo #contact #contactP {
+  padding: 2.5% 0 0 0;
+}
+header .contactInfo #contact #contactP p {
+  padding: 0 0 3% 0;
+}
+header .contactInfo #contact nav {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 10%;
+}
+header .contactInfo #contact nav a {
+  text-decoration: none;
+  color: #FFF2B3;
+  padding: 5%;
+}
+header .contactInfo #socials {
+  margin: 0 0 0 60%;
+}
+header .contactInfo #socials p {
+  padding: 0 0 0 7.5%;
+}
+header .contactInfo #socials img {
+  height: auto;
+  width: 80%;
+  padding: 10% 5% 0 0;
+}
+header footer {
+  text-align: center;
+  color: #FFF2B3;
+  margin: 3.5% 0 0 0;
 }

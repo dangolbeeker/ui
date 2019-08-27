@@ -4,18 +4,20 @@
 
 body {
 
+font-family: 'Nunito', sans-serif;
+
 }
 
 
 
 header {
-    background-image: url(../assets/yellowmap.png), url(../assets/topround.svg), url(../assets/topopache.svg), url(../assets/topopache.svg);
+    background-image: url(../assets/yellowmap.png), url(../assets/longbubble.svg), url(../assets/topround.svg), url(../assets/topopache.svg), url(../assets/topopache.svg), url(../assets/Rounded.svg);
     background-color: #0A4699;
     background-repeat: no-repeat;
-    background-position: 167% 0%, 50% 40%, 100% 35%, 0 35%;
+    background-position: 167% 0%, 50% 35%, 50% 30%, 100% 25%, 0 25%, 50% 85%;
     background-attachment: scroll;
-    background-size: auto, 100% 75%, 65% 75%, 65% 75%;
-    height: 300vh;
+    background-size: auto, 70% 25%, 100% 75%, 65% 75%, 65% 75%, 100%;
+    height: 325vh;
 
         #logoContainer{
             display: flex;
@@ -55,12 +57,12 @@ header {
     }
 
     #btn1 {
-        .buttons(1rem, #F7E486, #0A4699, 10%, center, center, 1.5% 5%, 5px);
+        .buttons(1.25rem, #F7E486, #0A4699, 10%, center, center, 1.5% 5%, 5px);
         margin: 0 0 2% 55%;
     }
 
     #btn2 {
-        .buttons(1rem, #0A4699, #F7E486, 10%, center, center, 1.5% 5%, 5px);
+        .buttons(1.25rem, #0A4699, #F7E486, 10%, center, center, 1.5% 5%, 5px);
         border: 1px solid #F7E486;
         margin: 0 0 0 55%;
     }
@@ -68,6 +70,7 @@ header {
     .about {
         margin: 30% 0 0 0;
         height: 75vh;
+        
 
         #aboutTop {
             display: flex;
@@ -77,33 +80,151 @@ header {
             width: 80%;
             margin: auto;
             border-radius: 5px;
+           
             
 
             p {
-                border: 2px solid #0A4699;
+                width: 85%;
+                margin: 7% 7% 0 0;
+                font-size: 1.25rem;
                 color: #0A4699;
-                background: white;
-                font-size: 1.55rem;
-                line-height: 2rem;
-                border-radius: 5px;
-                padding: 5% 2.5% 2.5% 2.5%;
-            }
-
-            #triangle {
-                color: white;
-                background: white;
-                width: 10%;
-                margin: 0 15% 0 0;
-                height: 75%;
-                clip-path: polygon(50% 100%, 25% 0, 75% 0);
-                border: 2px solid white;
+                
             }
 
             img {
-                margin: 2% 0 0 0;
+                margin: 5% 7% 0 0;
                 
                 
             }
         }
+
+        #aboutBottom {        
+            height: 40vh;
+            width: 90%;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 5% auto 0 auto;
+            padding: 5% 0 0 0;
+            border-top: 2px solid #0A4699;
+            
+        
+
+            .bottomInfo {
+                width: 30%;
+                
+
+                h3 {
+                    font-size: 1.75rem;
+                    padding: 0 0 0 11%;
+
+                    img {
+                        margin: 0 0 0 1%;
+                    }
+                   
+                }
+
+                p {
+                    margin: 5% 0 0 0;
+                    padding: 0 0 0 11%;
+                    width: 85%;
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+
+    #middleText {
+        margin: 12% auto 0 auto;
+        font-size: 1.5rem;
+        text-align: center;
+        color: #FFF2B3;
+        border-bottom: 2px solid #FFF2B3;
+        width: 22.5%;
+        padding: 0 0 2% 0;
+    
+    }
+
+    #userFeedBack {
+        display: flex;
+        justify-content: space-evenly;
+        width: 90%;
+        height: 30vh;
+        margin: 7.5% auto 0 auto;
+
+        .person {
+            width: 30%;
+            font-size: 1.25rem;
+
+            p {
+                width: 85%;
+                padding: 5% 0 0 11%;
+
+                img {
+                    border-radius: 50px;
+                    width: 25%;
+                    height: auto;
+                    padding: auto;
+                    margin: 0 0 0 3%;
+                }
+            }
+        }
+    }
+
+    #bottomBtn {
+        .buttons(1.25rem, #0A4699, #F7E486, 10%, center, center, 1.5% 5%, 5px);
+        margin: 7.5% auto 0 auto;
+    }
+
+    .contactInfo {
+        display: flex;
+        width: 90%;
+        height: 25vh;
+        margin: 12.5% auto 0 auto;
+        color: #FFF2B3;
+        font-size: 1.25rem;
+
+        #contact {
+            display: flex;
+
+            #contactP {
+                padding: 2.5% 0 0 0;
+
+                p {
+                    padding: 0 0 3% 0;
+                }
+            }
+
+            nav {
+                display: flex;
+                flex-direction: column;
+                margin: 0 0 0 10%;
+
+                a {
+                    text-decoration: none;
+                    color: #FFF2B3;
+                    padding: 5%;
+                }
+            }
+        }
+
+        #socials {
+            margin: 0 0 0 60%;
+
+            p {
+                padding: 0 0 0 7.5%;
+            }
+
+            img {
+                height: auto;
+                width: 80%;
+                padding: 10% 5% 0 0;
+            }
+        }
+    }
+
+    footer { 
+        text-align: center;
+        color: #FFF2B3;
+        margin: 3.5% 0 0 0;
     }
 }
