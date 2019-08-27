@@ -183,3 +183,37 @@ header #btn2 {
   border: 1px solid #F7E486;
   margin: 0 0 0 55%;
 }
+header .about {
+  margin: 30% 0 0 0;
+  height: 75vh;
+}
+header .about #aboutTop {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 30vh;
+  width: 80%;
+  margin: auto;
+  border-radius: 5px;
+}
+header .about #aboutTop p {
+  border: 2px solid #0A4699;
+  color: #0A4699;
+  background: white;
+  font-size: 1.55rem;
+  line-height: 2rem;
+  border-radius: 5px;
+  padding: 5% 2.5% 2.5% 2.5%;
+}
+header .about #aboutTop #triangle {
+  color: white;
+  background: white;
+  width: 10%;
+  margin: 0 15% 0 0;
+  height: 75%;
+  clip-path: polygon(50% 100%, 25% 0, 75% 0);
+  border: 2px solid white;
+}
+header .about #aboutTop img {
+  margin: 2% 0 0 0;
+}
