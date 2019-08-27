@@ -515,6 +515,9 @@ header .cta-content div .btn.signin:hover {
   cursor: pointer;
   box-shadow: 0 0 3px 0 #a55;
 }
+main .main-content {
+  color: #0a4699;
+}
 main .main-content .gator-quote {
   display: flex;
   flex-flow: column wrap;
@@ -532,7 +535,7 @@ main .main-content .gator-quote div p {
 main .main-content .gator-quote div .triangle {
   position: absolute;
   right: 145px;
-  bottom: 65px;
+  bottom: 67px;
 }
 main .main-content .gator-quote div .triangle::before,
 main .main-content .gator-quote div .triangle::after {
@@ -565,6 +568,24 @@ main .main-content .selling-points {
   background-color: #fff2b3;
   padding: 10px;
 }
+main .main-content .selling-points section {
+  display: flex;
+  flex-flow: row wrap;
+}
+main .main-content .selling-points section h3,
+main .main-content .selling-points section span {
+  width: auto;
+}
+main .main-content .selling-points section h3 {
+  margin-right: 15px;
+  font-weight: 400;
+}
+main .main-content .selling-points section p {
+  width: 100%;
+  margin: 15px 0;
+  margin-bottom: 25px;
+  padding-right: 25px;
+}
 main .main-content .testimonials {
   background-color: #fff2b3;
 }
@@ -573,4 +594,5 @@ main .main-content .testimonials figure {
 }
 main .main-content .testimonials h3 {
   background-color: #0a4699;
+  color: #fff2b3;
 }

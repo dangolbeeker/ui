@@ -1,5 +1,7 @@
 main {
   .main-content {
+    color: @main-blue;
+
     .gator-quote {
       display: flex;
       flex-flow: column wrap;
@@ -17,7 +19,7 @@ main {
         .triangle {
           position: absolute;
           right: 145px;
-          bottom: 65px;
+          bottom: 67px;
           &::before,
           &::after {
             content: '';
@@ -51,6 +53,28 @@ main {
     .selling-points {
       background-color: @main-yellow;
       padding: 10px;
+
+      section {
+        display: flex;
+        flex-flow: row wrap;
+
+        h3,
+        span {
+          width: auto;
+        }
+
+        h3 {
+          margin-right: 15px;
+          font-weight: 400;
+        }
+
+        p {
+          width: 100%;
+          margin: 15px 0;
+          margin-bottom: 35px;
+          padding-right: 25px;
+        }
+      }
     } // end .selling-points
     .testimonials {
       background-color: @main-yellow;
@@ -60,6 +84,7 @@ main {
 
       h3 {
         background-color: @main-blue;
+        color: @main-yellow;
       }
     } // end .testimonials
   } // end .main-content
