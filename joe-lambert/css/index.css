@@ -591,6 +591,33 @@ main .main-content .testimonials {
 }
 main .main-content .testimonials figure {
   padding: 10px;
+  display: inline-flex;
+  flex-flow: row wrap;
+  align-items: center;
+  font-size: 1.6rem;
+  margin: 20px 0;
+}
+main .main-content .testimonials figure:first-of-type {
+  margin-top: 35px;
+  margin-bottom: 0;
+}
+main .main-content .testimonials figure:last-of-type {
+  margin-bottom: 35px;
+  margin-top: 0;
+}
+main .main-content .testimonials figure blockquote {
+  width: 100%;
+  padding-right: 25px;
+  margin-bottom: 15px;
+}
+main .main-content .testimonials figure figcaption {
+  width: auto;
+  margin-right: 10px;
+}
+main .main-content .testimonials figure img {
+  width: 45px;
+  border-radius: 100%;
+  transform: translate3d(0, -5px, 0);
 }
 main .main-content .testimonials div {
   background-color: #0a4699;

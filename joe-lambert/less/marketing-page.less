@@ -80,6 +80,33 @@ main {
       background-color: @main-yellow;
       figure {
         padding: 10px;
+        display: inline-flex;
+        flex-flow: row wrap;
+        align-items: center;
+        font-size: 1.6rem;
+        margin: 20px 0;
+        &:first-of-type {
+          margin-top: 35px;
+          margin-bottom: 0;
+        }
+        &:last-of-type {
+          margin-bottom: 35px;
+          margin-top: 0;
+        }
+        blockquote {
+          width: 100%;
+          padding-right: 25px;
+          margin-bottom: 15px;
+        }
+        figcaption {
+          width: auto;
+          margin-right: 10px;
+        }
+        img {
+          width: 45px;
+          border-radius: 100%;
+          transform: translate3d(0, -5px, 0);
+        }
       }
 
       div {
