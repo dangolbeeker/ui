@@ -815,6 +815,11 @@ main .main-content .selling-points {
 @media screen and (min-width: 900px) {
   main .main-content .selling-points {
     padding-top: 125px;
+  }
+}
+@media screen and (min-width: 900px) {
+  main .main-content .selling-points .flex-container {
+    padding-top: 125px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -866,13 +871,10 @@ main .main-content .testimonials {
 }
 @media screen and (min-width: 900px) {
   main .main-content .testimonials {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
     padding-bottom: 90px;
   }
 }
-main .main-content .testimonials div {
+main .main-content .testimonials .testimonials-title {
   background-color: #0a4699;
   display: flex;
   justify-content: center;
@@ -880,7 +882,7 @@ main .main-content .testimonials div {
   padding: 90px 0;
   width: 100%;
 }
-main .main-content .testimonials div::after {
+main .main-content .testimonials .testimonials-title::after {
   content: '';
   position: absolute;
   width: 200px;
@@ -889,46 +891,46 @@ main .main-content .testimonials div::after {
   bottom: 65px;
 }
 @media screen and (min-width: 684px) {
-  main .main-content .testimonials div {
+  main .main-content .testimonials .testimonials-title {
     padding: 120px 0;
   }
-  main .main-content .testimonials div::after {
+  main .main-content .testimonials .testimonials-title::after {
     bottom: 85px;
   }
 }
 @media screen and (min-width: 844px) {
-  main .main-content .testimonials div {
+  main .main-content .testimonials .testimonials-title {
     padding: 140px 0;
   }
-  main .main-content .testimonials div::after {
+  main .main-content .testimonials .testimonials-title::after {
     bottom: 105px;
   }
 }
 @media screen and (min-width: 1152px) {
-  main .main-content .testimonials div {
+  main .main-content .testimonials .testimonials-title {
     padding: 160px 0;
   }
-  main .main-content .testimonials div::after {
+  main .main-content .testimonials .testimonials-title::after {
     bottom: 125px;
   }
 }
 @media screen and (min-width: 1400px) {
-  main .main-content .testimonials div {
+  main .main-content .testimonials .testimonials-title {
     padding: 180px 0;
   }
-  main .main-content .testimonials div::after {
+  main .main-content .testimonials .testimonials-title::after {
     bottom: 145px;
   }
 }
-main .main-content .testimonials div h3 {
+main .main-content .testimonials .testimonials-title h3 {
   color: #fff2b3;
   font-weight: 400;
   width: 100%;
   text-align: center;
   position: relative;
 }
-main .main-content .testimonials div h3::before,
-main .main-content .testimonials div h3::after {
+main .main-content .testimonials .testimonials-title h3::before,
+main .main-content .testimonials .testimonials-title h3::after {
   content: '';
   background-image: url('../assets/rounded-border-top-users.svg');
   background-position: 0 0;
@@ -940,27 +942,35 @@ main .main-content .testimonials div h3::after {
   height: 100px;
   z-index: 0;
 }
-main .main-content .testimonials div h3::before {
+main .main-content .testimonials .testimonials-title h3::before {
   top: -145px;
   transform: rotate(180deg);
 }
-main .main-content .testimonials div h3::after {
+main .main-content .testimonials .testimonials-title h3::after {
   bottom: -145px;
 }
 @media screen and (min-width: 684px) {
-  main .main-content .testimonials div h3::before {
+  main .main-content .testimonials .testimonials-title h3::before {
     top: -165px;
   }
-  main .main-content .testimonials div h3::after {
+  main .main-content .testimonials .testimonials-title h3::after {
     bottom: -165px;
   }
 }
 @media screen and (min-width: 1400px) {
-  main .main-content .testimonials div h3::before {
+  main .main-content .testimonials .testimonials-title h3::before {
     top: -180px;
   }
-  main .main-content .testimonials div h3::after {
+  main .main-content .testimonials .testimonials-title h3::after {
     bottom: -180px;
+  }
+}
+@media screen and (min-width: 900px) {
+  main .main-content .testimonials .flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom: 90px;
   }
 }
 main .main-content .testimonials figure {

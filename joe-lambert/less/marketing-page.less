@@ -189,10 +189,16 @@ main {
       z-index: 5;
       @media @tablet-large {
         padding-top: 125px;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: flex-start;
+      }
+
+      .flex-container {
+        @media @tablet-large {
+          padding-top: 125px;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+          align-items: flex-start;
+        }
       }
 
       .border-top {
@@ -239,13 +245,10 @@ main {
       background-color: @main-yellow;
       padding-bottom: 25px;
       @media @tablet-large {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
         padding-bottom: 90px;
       }
 
-      div {
+      .testimonials-title {
         background-color: @main-blue;
         display: flex;
         justify-content: center;
@@ -327,6 +330,15 @@ main {
               bottom: -180px;
             }
           }
+        }
+      }
+
+      .flex-container {
+        @media @tablet-large {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+          padding-bottom: 90px;
         }
       }
 
