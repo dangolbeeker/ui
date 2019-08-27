@@ -1,16 +1,18 @@
 main {
   .main-content {
-    padding: 10px;
-
     .gator-quote {
       display: flex;
       flex-flow: column wrap;
       position: relative;
+      background-color: @main-yellow;
       div {
         p {
           padding: 10px;
+          margin: 10px;
+          margin-bottom: 0;
           border: 0.2rem solid @main-blue;
           border-radius: 9px;
+          background-color: #fff;
         }
         .triangle {
           position: absolute;
@@ -46,5 +48,19 @@ main {
         margin-left: auto;
       }
     } // end .gator-quote
+    .selling-points {
+      background-color: @main-yellow;
+      padding: 10px;
+    } // end .selling-points
+    .testimonials {
+      background-color: @main-yellow;
+      figure {
+        padding: 10px;
+      }
+
+      h3 {
+        background-color: @main-blue;
+      }
+    } // end .testimonials
   } // end .main-content
 } // end main

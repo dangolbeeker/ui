@@ -323,6 +323,8 @@ template {
 * {
   box-sizing: border-box;
   max-width: 100%;
+  padding: 0;
+  margin: 0;
 }
 html {
   font-size: 62.5%;
@@ -362,6 +364,7 @@ p {
   max-width: 100%;
   width: 100%;
   margin: 0 auto;
+  background-color: #0a4699;
 }
 span.logo {
   display: inline-flex;
@@ -512,18 +515,19 @@ header .cta-content div .btn.signin:hover {
   cursor: pointer;
   box-shadow: 0 0 3px 0 #a55;
 }
-main .main-content {
-  padding: 10px;
-}
 main .main-content .gator-quote {
   display: flex;
   flex-flow: column wrap;
   position: relative;
+  background-color: #fff2b3;
 }
 main .main-content .gator-quote div p {
   padding: 10px;
+  margin: 10px;
+  margin-bottom: 0;
   border: 0.2rem solid #0a4699;
   border-radius: 9px;
+  background-color: #fff;
 }
 main .main-content .gator-quote div .triangle {
   position: absolute;
@@ -556,4 +560,17 @@ main .main-content .gator-quote span.logo {
   width: 100px;
   height: 65px;
   margin-left: auto;
+}
+main .main-content .selling-points {
+  background-color: #fff2b3;
+  padding: 10px;
+}
+main .main-content .testimonials {
+  background-color: #fff2b3;
+}
+main .main-content .testimonials figure {
+  padding: 10px;
+}
+main .main-content .testimonials h3 {
+  background-color: #0a4699;
 }
