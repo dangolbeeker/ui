@@ -1,11 +1,12 @@
 @import "variables";
 @import "header-logo";
+@import "team-table";
 * {
     box-sizing: border-box;
 }
 html {
     font-size: 62.5%;
-    font-family: 'Nunito', sans-serif;
+    font-family: @font-family;
     }
 h1 {
     font-size: 2.5rem;
@@ -36,8 +37,7 @@ body {
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
-        min-height: 600px;
-        height: 90vh;
+        min-height: 500px;
         @media @mobile {
             margin-bottom: 10%;
         }
