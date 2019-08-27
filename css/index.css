@@ -129,16 +129,15 @@ table {
 body {
   font-family: 'Nunito', sans-serif;
 }
-header {
-  background-image: url(../assets/yellowmap.png), url(../assets/longbubble.svg), url(../assets/topround.svg), url(../assets/topopache.svg), url(../assets/topopache.svg), url(../assets/Rounded.svg);
+body header {
+  background-image: url(../assets/yellowmap.png);
   background-color: #0A4699;
   background-repeat: no-repeat;
-  background-position: 167% 0%, 50% 35%, 50% 30%, 100% 25%, 0 25%, 50% 85%;
-  background-attachment: scroll;
-  background-size: auto, 70% 25%, 100% 75%, 65% 75%, 65% 75%, 100%;
-  height: 325vh;
+  background-position: 167% 0%, 50% 85%;
+  background-size: auto, 100%;
+  min-height: 280vh;
 }
-header #logoContainer {
+body header #logoContainer {
   display: flex;
   font-size: 2rem;
   height: 32vh;
@@ -147,38 +146,38 @@ header #logoContainer {
   background-repeat: no-repeat;
   background-size: auto, 400px 270px;
 }
-header #logoContainer p {
-  padding: 7% 0 0 4%;
+body header #logoContainer p {
+  padding: 13% 0 0 4%;
   color: #0A4699;
 }
-header #logoContainer img {
+body header #logoContainer img {
   margin: 0 0 0 0;
   padding: 0 0 160px 25px;
 }
-header h1 {
+body header h1 {
   color: #F7E486;
   font-size: 3rem;
   margin: 0 0 0 10%;
   padding: 1%;
 }
-header #btn1 {
+body header #btn1 {
   display: flex;
   font-size: 1.25rem;
   background: #F7E486;
   color: #0A4699;
-  width: 10%;
+  width: 15%;
   justify-content: center;
   align-items: center;
   padding: 1.5% 5%;
   border-radius: 5px;
   margin: 0 0 2% 55%;
 }
-header #btn2 {
+body header #btn2 {
   display: flex;
   font-size: 1.25rem;
   background: #0A4699;
   color: #F7E486;
-  width: 10%;
+  width: 15%;
   justify-content: center;
   align-items: center;
   padding: 1.5% 5%;
@@ -186,29 +185,38 @@ header #btn2 {
   border: 1px solid #F7E486;
   margin: 0 0 0 55%;
 }
-header .about {
-  margin: 30% 0 0 0;
-  height: 75vh;
+body header .about {
+  margin: 10% 0 0 0;
+  height: 90vh;
+  background-image: url(../assets/topround.svg), url(../assets/topopache.svg), url(../assets/topopache.svg);
+  background-size: contain;
+  background-position: 50% 70%, 100% 100%, 0 100%;
+  background-repeat: no-repeat;
 }
-header .about #aboutTop {
+body header .about #aboutTop {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  height: 30vh;
-  width: 80%;
-  margin: auto;
+  width: 100%;
+  margin: 10% auto 0 auto;
   border-radius: 5px;
 }
-header .about #aboutTop p {
-  width: 85%;
-  margin: 7% 7% 0 0;
+body header .about #aboutTop p {
+  background-image: url(../assets/longbubble.svg);
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 80%;
+  height: 15vh;
+  margin: 10% auto 0 auto;
+  padding: 5%;
   font-size: 1.25rem;
   color: #0A4699;
 }
-header .about #aboutTop img {
-  margin: 5% 7% 0 0;
+body header .about #gator {
+  margin: 0 0% 0 75%;
 }
-header .about #aboutBottom {
+body header .about #aboutBottom {
   height: 40vh;
   width: 90%;
   display: flex;
@@ -217,24 +225,24 @@ header .about #aboutBottom {
   padding: 5% 0 0 0;
   border-top: 2px solid #0A4699;
 }
-header .about #aboutBottom .bottomInfo {
+body header .about #aboutBottom .bottomInfo {
   width: 30%;
 }
-header .about #aboutBottom .bottomInfo h3 {
+body header .about #aboutBottom .bottomInfo h3 {
   font-size: 1.75rem;
   padding: 0 0 0 11%;
 }
-header .about #aboutBottom .bottomInfo h3 img {
+body header .about #aboutBottom .bottomInfo h3 img {
   margin: 0 0 0 1%;
 }
-header .about #aboutBottom .bottomInfo p {
+body header .about #aboutBottom .bottomInfo p {
   margin: 5% 0 0 0;
   padding: 0 0 0 11%;
   width: 85%;
   font-size: 1.25rem;
 }
-header #middleText {
-  margin: 12% auto 0 auto;
+body header #middleText {
+  margin: 5% auto 0 auto;
   font-size: 1.5rem;
   text-align: center;
   color: #FFF2B3;
@@ -242,41 +250,55 @@ header #middleText {
   width: 22.5%;
   padding: 0 0 2% 0;
 }
-header #userFeedBack {
+body header #bottomHalf {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url(../assets/Rounded.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 60vh;
+  margin: 5% 0 0 0;
+}
+body header #bottomHalf #userFeedBack {
+  display: flex;
+  justify-content: space-around;
+  height: 25vh;
+  margin: 7.5% auto 0 auto;
+  width: 90%;
+}
+body header #bottomHalf #userFeedBack .person {
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+  margin: 0 0 0 5%;
+}
+body header #bottomHalf #userFeedBack .person p {
   display: flex;
   justify-content: space-evenly;
-  width: 90%;
-  height: 30vh;
-  margin: 7.5% auto 0 auto;
-}
-header #userFeedBack .person {
-  width: 30%;
-  font-size: 1.25rem;
-}
-header #userFeedBack .person p {
   width: 85%;
-  padding: 5% 0 0 11%;
+  margin: 0 0 5% 0;
 }
-header #userFeedBack .person p img {
+body header #bottomHalf #userFeedBack .person p img {
   border-radius: 50px;
   width: 25%;
   height: auto;
-  padding: auto;
-  margin: 0 0 0 3%;
 }
-header #bottomBtn {
+body header #bottomHalf #bottomBtn {
   display: flex;
   font-size: 1.25rem;
   background: #0A4699;
   color: #F7E486;
-  width: 10%;
+  width: 15%;
   justify-content: center;
   align-items: center;
   padding: 1.5% 5%;
   border-radius: 5px;
-  margin: 7.5% auto 0 auto;
+  margin: 0 auto 5% auto;
 }
-header .contactInfo {
+body header .contactInfo {
   display: flex;
   width: 90%;
   height: 25vh;
@@ -284,37 +306,37 @@ header .contactInfo {
   color: #FFF2B3;
   font-size: 1.25rem;
 }
-header .contactInfo #contact {
+body header .contactInfo #contact {
   display: flex;
 }
-header .contactInfo #contact #contactP {
+body header .contactInfo #contact #contactP {
   padding: 2.5% 0 0 0;
 }
-header .contactInfo #contact #contactP p {
+body header .contactInfo #contact #contactP p {
   padding: 0 0 3% 0;
 }
-header .contactInfo #contact nav {
+body header .contactInfo #contact nav {
   display: flex;
   flex-direction: column;
   margin: 0 0 0 10%;
 }
-header .contactInfo #contact nav a {
+body header .contactInfo #contact nav a {
   text-decoration: none;
   color: #FFF2B3;
   padding: 5%;
 }
-header .contactInfo #socials {
+body header .contactInfo #socials {
   margin: 0 0 0 60%;
 }
-header .contactInfo #socials p {
-  padding: 0 0 0 7.5%;
+body header .contactInfo #socials p {
+  text-align: center;
+  width: 100%;
 }
-header .contactInfo #socials img {
+body header .contactInfo #socials img {
   height: auto;
-  width: 80%;
-  padding: 10% 5% 0 0;
+  width: 100%;
 }
-header footer {
+body header footer {
   text-align: center;
   color: #FFF2B3;
   margin: 3.5% 0 0 0;
