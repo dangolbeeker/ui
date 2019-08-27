@@ -706,10 +706,33 @@ main .main-content .gator-quote div p {
   border-radius: 9px;
   background-color: #fff;
 }
+@media screen and (min-width: 700px) {
+  main .main-content .gator-quote div p {
+    font-size: 1.8rem;
+    padding: 20px;
+    padding-right: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
+@media screen and (min-width: 900px) {
+  main .main-content .gator-quote div p {
+    font-size: 2.1rem;
+    padding: 30px;
+    padding-right: 15px;
+    margin-right: 75px;
+    margin-left: 75px;
+  }
+}
 main .main-content .gator-quote div .triangle {
   position: absolute;
   right: 145px;
   bottom: 2px;
+}
+@media screen and (min-width: 900px) {
+  main .main-content .gator-quote div .triangle {
+    right: 225px;
+  }
 }
 main .main-content .gator-quote div .triangle::before,
 main .main-content .gator-quote div .triangle::after {
@@ -741,12 +764,24 @@ main .main-content .gator-quote span.logo {
   position: relative;
   z-index: 5;
 }
+@media screen and (min-width: 900px) {
+  main .main-content .gator-quote span.logo {
+    width: 162px;
+    height: 86px;
+    margin-right: 40px;
+  }
+}
 main .main-content .selling-points {
   background-color: #fff2b3;
   padding: 10px;
   padding-top: 55px;
   position: relative;
   z-index: 5;
+}
+@media screen and (min-width: 900px) {
+  main .main-content .selling-points {
+    padding-top: 85px;
+  }
 }
 main .main-content .selling-points .border-top {
   position: absolute;
@@ -756,6 +791,13 @@ main .main-content .selling-points .border-top {
   height: 1px;
   background-color: #0a4699;
   margin-top: 25px;
+}
+@media screen and (min-width: 900px) {
+  main .main-content .selling-points .border-top {
+    margin-top: 50px;
+    left: 5%;
+    right: 5%;
+  }
 }
 main .main-content .selling-points section {
   display: flex;
