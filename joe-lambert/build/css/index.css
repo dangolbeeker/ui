@@ -485,11 +485,11 @@ span.logo {
   box-shadow: 0px -1px 15px 0px rgba(0, 0, 0, 0);
 }
 .top-nav span.logo {
-  width: 65px;
-  height: 65px;
+  width: 60px;
+  height: 60px;
 }
 .top-nav div {
-  width: 50%;
+  width: 90%;
   display: flex;
   justify-content: flex-end;
 }
@@ -497,7 +497,7 @@ span.logo {
   display: flex;
   justify-content: center;
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   position: relative;
   z-index: 5;
   margin-left: 15px;
@@ -507,9 +507,9 @@ span.logo {
   outline: none;
   color: #fff2b3;
   background-color: #0a4699;
-  padding: 10px;
+  padding: 5px;
   border-radius: 6px;
-  width: 130px;
+  width: 100px;
   transition: 200ms;
 }
 .top-nav .btn.signup:focus {
@@ -529,9 +529,9 @@ span.logo {
   outline: none;
   color: #0a4699;
   background-color: transparent;
-  padding: 10px;
+  padding: 5px;
   border-radius: 6px;
-  width: 130px;
+  width: 100px;
   transition: 200ms;
 }
 .top-nav .btn.signin:focus {
@@ -545,6 +545,16 @@ span.logo {
 .top-nav .btn.signin:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
+}
+@media screen and (min-width: 700px) {
+  .top-nav .btn {
+    font-size: 1.6rem;
+  }
+  .top-nav .btn.signin,
+  .top-nav .btn.signup {
+    padding: 10px;
+    width: 130px;
+  }
 }
 header {
   background-image: url('../assets/map-yellow.png');
