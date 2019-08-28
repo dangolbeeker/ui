@@ -224,6 +224,7 @@ body .mainBody .about #aboutBottom {
   margin: 5% auto 0 auto;
   padding: 5% 0 0 0;
   border-top: 2px solid #0A4699;
+  color: #073069;
 }
 body .mainBody .about #aboutBottom .bottomInfo {
   width: 30%;
@@ -267,6 +268,7 @@ body .mainBody #bottomHalf #userFeedBack {
   height: 25vh;
   margin: 7.5% auto 0 auto;
   width: 90%;
+  color: #073069;
 }
 body .mainBody #bottomHalf #userFeedBack .person {
   font-size: 1.25rem;
