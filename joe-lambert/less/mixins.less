@@ -23,6 +23,11 @@
   }
   &:hover {
     cursor: pointer;
-    box-shadow: 0 0 3px 0 @focus-shadow;
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem @focus-shadow;
+  }
+  &:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
   }
 }
