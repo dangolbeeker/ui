@@ -171,6 +171,11 @@ body .middle .p-container {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (max-width: 500px) {
+  body .middle .p-container {
+    background: white;
+  }
+}
 body .middle .p-container p {
   padding: 7%;
   margin-top: 0;
@@ -189,6 +194,7 @@ body .middle .middle-a {
 body .middle .middle-a .logo-container {
   display: flex;
   justify-content: center;
+  margin-left: 50%;
 }
 body .middle .middle-a .descriptions {
   display: flex;
@@ -369,11 +375,6 @@ body .contact-container .social {
 }
 body .contact-container .social .icons {
   display: flex;
-}
-body .contact-container .social .icons img {
-  height: 50px;
-  width: 50px;
-  padding: 10%;
 }
 @media (max-width: 500px) {
   body .contact-container .social .icons img {

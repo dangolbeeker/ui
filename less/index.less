@@ -95,6 +95,9 @@ body {
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
+            @media @mobile {
+                background: white;
+            }
             p {
                 padding: 7%;
                 margin-top: 0;
@@ -114,6 +117,7 @@ body {
             .logo-container {
                 display: flex;
                 justify-content: center;
+                margin-left: 50%;
             }
 
             .descriptions {
@@ -267,9 +271,6 @@ body {
             .icons {
                 display: flex;
                 img {
-                    height: 50px;
-                    width: 50px;
-                    padding: 10%;
                     @media @mobile {
                         padding: 0 3%;  
                     }
