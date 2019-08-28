@@ -467,6 +467,7 @@ span.logo {
 }
 .top-nav {
   position: fixed;
+  z-index: 9999;
   top: 0;
   height: 60px;
   width: 100%;
@@ -475,6 +476,7 @@ span.logo {
   justify-content: space-around;
   transition: 200ms;
   transform: translate3d(0, 0, 0);
+  background-color: #fff2b3;
 }
 .top-nav.hidden {
   transform: translate3d(0, -100%, 0);
