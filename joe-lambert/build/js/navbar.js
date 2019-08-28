@@ -1,20 +1,14 @@
-const handleNavbar = directive => {
+const handleNavbar = (height, scrollDistance) => {
   const navbar = document.getElementById('fixed-navbar');
-  if (directive === 'show') navbar.classList.remove('hidden');
-  if (directive === 'hide') navbar.classList.add('hidden');
+  if (scrollDistance > height) navbar.classList.remove('hidden');
+  if (scrollDistance < height / 2) navbar.classList.add('hidden');
+  console.log('callllllllling ');
 };
 
-window.addEventListener('DOMContentLoaded', event => {
+window.addEventListener('DOMContentLoaded', () => {
   const height = window.innerHeight;
-  document.addEventListener('scroll', event => {
+  document.addEventListener('scroll', () => {
     const scrollDistance = window.scrollY;
-    window.requestAnimationFrame(event => {
-      if (scrollDistance >= height) {
-        handleNavbar('show');
-      }
-      if (scrollDistance === 0) {
-        handleNavbar('hide');
-      }
-    });
+    window.requestAnimationFrame(() => handleNavbar(height, scrollDistance));
   });
 });
