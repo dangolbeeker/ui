@@ -186,11 +186,11 @@ body .mainBody header #btn2 {
   margin: 0 0 0 55%;
 }
 body .mainBody .about {
-  margin: 10% 0 0 0;
-  height: 110vh;
-  background-image: url(../assets/largeCenter.svg);
-  background-size: cover;
-  background-position: center;
+  margin: 5% 0 0 0;
+  height: 130vh;
+  background-image: url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/topopache.svg), url(../assets/topopache.svg);
+  background-size: 50%, 75%, 75%, 75%, 75%, 75%, 75%, 75%, 60%, 60%;
+  background-position: 50% 13.5%, 50% 93%, 0 92%, 100% 92%, 100% 50%, 100% 25%, 0 25%, 0 50%, 0% 20%, 100% 20%;
   background-repeat: no-repeat;
 }
 body .mainBody .about #aboutTop {
@@ -199,7 +199,7 @@ body .mainBody .about #aboutTop {
   align-items: flex-end;
   width: 100%;
   margin: 0 auto 0 auto;
-  border-radius: 5px;
+  padding: 5% 0 0 0;
 }
 body .mainBody .about #aboutTop p {
   background-image: url(../assets/longbubble.svg);
@@ -209,7 +209,7 @@ body .mainBody .about #aboutTop p {
   width: 80%;
   height: 15vh;
   margin: 10% auto 0 auto;
-  padding: 5% 5% 5% 5%;
+  padding: 10% 5% 5% 5%;
   font-size: 1.25rem;
   color: #0A4699;
 }
@@ -243,7 +243,7 @@ body .mainBody .about #aboutBottom .bottomInfo p {
   font-size: 1.25rem;
 }
 body .mainBody #middleText {
-  margin: 5% auto 0 auto;
+  margin: 0 auto 0 auto;
   font-size: 1.5rem;
   text-align: center;
   color: #FFF2B3;
@@ -346,6 +346,7 @@ body .mainBody footer {
 @media (max-width: 500px) {
   body {
     max-width: 100%;
+    height: 380vh;
   }
   body .mainBody {
     background-image: url(../assets/yellowmap.png);
@@ -353,7 +354,9 @@ body .mainBody footer {
     background-repeat: no-repeat;
     background-position: 50% 10%;
     background-size: contain;
-    min-height: 240vh;
+  }
+  body .mainBody header #logoContainer {
+    height: 50vh;
   }
   body .mainBody header h1 {
     margin: auto;
@@ -370,7 +373,7 @@ body .mainBody footer {
     align-items: center;
     padding: 1.5% 5%;
     border-radius: 5px;
-    margin: 0 0 2% 30%;
+    margin: 5% 0 4% 30%;
   }
   body .mainBody header #btn2 {
     display: flex;
@@ -387,30 +390,32 @@ body .mainBody footer {
   }
   body .mainBody .about {
     margin: 10% 0 0 0;
-    height: 90vh;
-    background-image: url(../assets/topround.svg), url(../assets/topopache.svg), url(../assets/topopache.svg);
-    background-size: contain, cover, cover;
-    background-position: 50% 10%, 100% 0%, 0 0%;
+    height: 120vh;
+    background-image: url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/topopache.svg), url(../assets/topopache.svg);
+    background-size: 90%, 90%, 90%, 90%, 90%, 90%, 60%, 60%;
+    background-position: 0 92%, 100% 92%, 100% 50%, 100% 25%, 0 25%, 0 50%, 0% 22.5%, 100% 22.5%;
     background-repeat: no-repeat;
+    max-width: 100%;
   }
   body .mainBody .about #aboutTop {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 90%;
+    max-width: 90%;
+    padding: 35% 0 0 0;
     margin: 0 auto 0 auto;
     border-radius: 5px;
     background-image: url(../assets/longbubble.svg);
     background-size: contain;
-    background-position: 50% 100%;
+    background-position: 50% 90%;
     background-repeat: no-repeat;
   }
   body .mainBody .about #aboutTop p {
     background-image: none;
-    width: 90%;
+    width: 98%;
     height: 5vh;
-    margin: 10% auto 0 auto;
-    padding: 5% 0 5% 0;
+    margin: 0 auto 0 auto;
+    padding: 5% 0 15% 0;
     font-size: 1rem;
     color: #0A4699;
   }
@@ -418,14 +423,16 @@ body .mainBody footer {
     margin: 0 0 0 75%;
   }
   body .mainBody .about #aboutBottom {
-    height: 60vh;
-    width: 90%;
+    height: 70vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
-    padding: 5% 0 0 0;
-    border-top: 2px solid #0A4699;
+    padding: 5% 0 5% 0;
+    margin: 0 auto 0 auto;
+    background-image: url(../assets/hugeCenter.svg);
+    border-radius: 95px;
   }
   body .mainBody .about #aboutBottom .bottomInfo {
     width: 90%;
@@ -441,15 +448,15 @@ body .mainBody footer {
     margin: 5% 0 0 0;
     padding: 0 0 0 11%;
     width: 85%;
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
   body .mainBody #middleText {
-    margin: 5% auto 0 auto;
+    margin: 30% auto 10% auto;
     font-size: 1.5rem;
     text-align: center;
     color: #FFF2B3;
     border-bottom: 2px solid #FFF2B3;
-    width: 22.5%;
+    width: 50%;
     padding: 0 0 2% 0;
   }
   body .mainBody #bottomHalf {
@@ -460,8 +467,8 @@ body .mainBody footer {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    height: 60vh;
-    margin: 5% 0 0 0;
+    height: 100vh;
+    margin: 0 0 0 0;
   }
   body .mainBody #bottomHalf #userFeedBack {
     display: flex;
@@ -500,6 +507,9 @@ body .mainBody footer {
     padding: 1.5% 5%;
     border-radius: 5px;
     margin: 0 auto 5% auto;
+  }
+  body .mainBody .contactInfo {
+    margin: 5% auto 20% auto;
   }
   body .mainBody .contactInfo #socials {
     margin: 0 0 0 10%;
