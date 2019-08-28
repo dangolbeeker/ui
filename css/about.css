@@ -174,10 +174,88 @@ body .mainBody #teamContainer .team {
   flex-direction: column;
   align-items: center;
   width: 30%;
+  border: 2px solid #F7E486;
+  margin: 0 0 5% 0;
+  box-shadow: 0 0 20px black;
 }
-body .mainBody #teamContainer .team img {
+body .mainBody #teamContainer .team .picture1 {
   width: 100%;
-  height: 300px;
+  height: 30vh;
+  background-image: url(../assets/Dave.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body .mainBody #teamContainer .team .picture2 {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../assets/Dylan.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body .mainBody #teamContainer .team .picture3 {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../assets/Joe.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body .mainBody #teamContainer .team .picture4 {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../assets/lorenzo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body .mainBody #teamContainer .team .picture5 {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../assets/Michael.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body .mainBody #teamContainer .team .picture6 {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../assets/Noor.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body .mainBody #teamContainer .team .picture7 {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../assets/Scott.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body .mainBody #teamContainer .team .picture8 {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../assets/Zach.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body .mainBody #teamContainer .team .picture9 {
+  width: 100%;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body .mainBody #teamContainer .team .picture10 {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../assets/Gavin.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 body .mainBody #teamContainer .team p {
   text-align: center;
@@ -186,7 +264,7 @@ body .mainBody #teamContainer .team p {
   margin: 5% auto 0 auto;
 }
 body .mainBody #teamContainer .team .btn {
-  margin: 5% 0 0 0;
+  margin: 5% 0 5% 0;
   display: flex;
   font-size: 1.25rem;
   background: #FFE981;
@@ -196,6 +274,7 @@ body .mainBody #teamContainer .team .btn {
   align-items: center;
   padding: 5%;
   border-radius: 5px;
+  box-shadow: 0 0 20px black;
 }
 body .mainBody .contactInfo {
   display: flex;
@@ -239,4 +318,16 @@ body .mainBody footer {
   text-align: center;
   color: #FFF2B3;
   margin: 3.5% 0 0 0;
+}
+@media (max-width: 500px) {
+  body .mainBody #teamContainer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+  }
+  body .mainBody #teamContainer .team {
+    width: 100%;
+    display: flex;
+  }
 }
