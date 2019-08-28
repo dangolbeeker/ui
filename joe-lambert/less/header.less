@@ -7,16 +7,56 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   transition: @standard;
   transform: translate3d(0, 0, 0);
   background-color: @main-yellow;
+  padding: 0 15px;
+  box-shadow: 0px -1px 15px 0px rgba(0, 0, 0, 0.2);
   &.hidden {
     transform: translate3d(0, -100%, 0);
+    box-shadow: 0px -1px 15px 0px rgba(0, 0, 0, 0);
   }
   span.logo {
     width: 65px;
     height: 65px;
+  }
+  div {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.6rem;
+    position: relative;
+    z-index: 5;
+    margin-left: 15px;
+    // mixin button
+    &.signup {
+      .button(
+        @color: @main-yellow,
+        @bg-color: @main-blue,
+        @padding: 10px,
+        @border-radius: 6px,
+        @focus-shadow: rgba(0, 0, 0, 0.2),
+        @width: 130px,
+        @border: 2px solid @main-blue
+      );
+    }
+    &.signin {
+      .button(
+        @color: @main-yellow,
+        @bg-color: transparent,
+        @padding: 10px,
+        @border-radius: 6px,
+        @focus-shadow: rgba(0, 0, 0, 0.2),
+        @width: 130px,
+        @border: 2px solid @main-yellow
+      );
+    }
   }
 }
 

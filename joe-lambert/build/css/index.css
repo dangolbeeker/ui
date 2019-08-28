@@ -473,17 +473,78 @@ span.logo {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   transition: 200ms;
   transform: translate3d(0, 0, 0);
   background-color: #fff2b3;
+  padding: 0 15px;
+  box-shadow: 0px -1px 15px 0px rgba(0, 0, 0, 0.2);
 }
 .top-nav.hidden {
   transform: translate3d(0, -100%, 0);
+  box-shadow: 0px -1px 15px 0px rgba(0, 0, 0, 0);
 }
 .top-nav span.logo {
   width: 65px;
   height: 65px;
+}
+.top-nav div {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.top-nav .btn {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.6rem;
+  position: relative;
+  z-index: 5;
+  margin-left: 15px;
+}
+.top-nav .btn.signup {
+  border: 2px solid #0a4699;
+  outline: none;
+  color: #fff2b3;
+  background-color: #0a4699;
+  padding: 10px;
+  border-radius: 6px;
+  width: 130px;
+  transition: 200ms;
+}
+.top-nav .btn.signup:focus {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+.top-nav .btn.signup:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.top-nav .btn.signup:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.top-nav .btn.signin {
+  border: 2px solid #fff2b3;
+  outline: none;
+  color: #fff2b3;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 6px;
+  width: 130px;
+  transition: 200ms;
+}
+.top-nav .btn.signin:focus {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+.top-nav .btn.signin:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.top-nav .btn.signin:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
 }
 header {
   background-image: url('../assets/map-yellow.png');
