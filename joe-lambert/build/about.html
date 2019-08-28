@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>conjugator.io | about</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="site-title">
+            <a href="/index.html">
+              <h1>Conjugator.io</h1>
+            </a>
+            <span class="logo"></span>
+          </div>
+          <div class="top-nav hidden">
+            <a href="/index.html"><span class="logo">Home</span></a>
+            <div>
+              <a class="btn signup" href="#">Get Started!</a>
+              <a class="btn signin" href="#">Sign In</a>
+            </div>
+          </div>
+        </nav>
+        <section class="cta-content">
+          <h2>Meet the team!</h2>
+        </section>
+      </header>
+      <main>
+        <div class="main-content __about">
+          <div class="waves">
+            <div class="transparent-waves"></div>
+            <div class="solid-wave"></div>
+          </div>
+          <section class="team">
+            <figure>
+              <img src="./assets/customer-2.jpg" alt="a closeup profile photo of firstname lastname" />
+              <h3>Firstname Lastname</h3>
+              <p>Description content</p>
+              <a href="#" class="btn">Github</a>
+            </figure>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <div class="marketing-footer">
+          <section class="contact">
+            <h4>Contact</h4>
+            <div>
+              <a href="mailto:hello@conjugator.io">hello@conjugator.io</a>
+            </div>
+          </section>
+          <section class="bottom-nav">
+            <h4>Links</h4>
+            <nav>
+              <div>
+                <a href="#">About</a>
+                <a href="#">Press</a>
+                <a href="#">Career</a>
+                <a href="#">Blog</a>
+                <a href="#">Privacy Policy</a>
+              </div>
+            </nav>
+          </section>
+          <section class="social-links">
+            <h4>Follow Us</h4>
+            <div>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </div>
+          </section>
+        </div>
+        <p class="copyright">Copyright &copy; <span id="date"></span>Conjugator. All rights reserved.</p>
+      </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/3a8eb1f6d9.js"></script>
+    <script>
+      let d = new Date();
+      const copyrightElement = document.getElementById('date');
+      copyrightElement.textContent = `${d.getFullYear()} `;
+    </script>
+  </body>
+</html>

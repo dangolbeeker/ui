@@ -367,12 +367,102 @@ span.logo {
   background-position: center;
   background-repeat: no-repeat;
 }
-@keyframes fade-out-in {
-  from {
-    opacity: 0;
+.waves {
+  position: relative;
+}
+.waves .solid-wave::before {
+  content: '';
+  background-image: url('../assets/rounded-border-top-users.svg');
+  background-position: 0 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 50px;
+  top: -50px;
+  width: 100%;
+  position: absolute;
+}
+@media screen and (min-width: 764px) {
+  .waves .solid-wave::before {
+    top: -65px;
+    height: 65px;
   }
-  to {
-    opacity: 1;
+}
+@media screen and (min-width: 1000px) {
+  .waves .solid-wave::before {
+    top: -85px;
+    height: 86px;
+  }
+}
+.waves .transparent-waves {
+  background-color: transparent;
+  position: relative;
+}
+@media screen and (min-width: 700px) {
+  .waves .transparent-waves {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .waves .transparent-waves {
+    margin-bottom: 100px;
+  }
+}
+.waves .transparent-waves::before,
+.waves .transparent-waves::after {
+  content: '';
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  background-image: url('../assets/rounded-border.svg');
+  background-size: 100%;
+  height: 250px;
+  top: -78px;
+  z-index: 0;
+}
+.waves .transparent-waves::before {
+  content: '';
+  background-position: -100px 0;
+}
+.waves .transparent-waves::after {
+  content: '';
+  background-position: 100px 0;
+}
+@media screen and (min-width: 416px) {
+  .waves .transparent-waves::before {
+    background-position: -120px 0;
+  }
+  .waves .transparent-waves::after {
+    background-position: 120px 0;
+  }
+}
+@media screen and (min-width: 578px) {
+  .waves .transparent-waves::before {
+    background-position: -130px 0;
+  }
+  .waves .transparent-waves::after {
+    background-position: 130px 0;
+  }
+}
+@media screen and (min-width: 764px) {
+  .waves .transparent-waves {
+    top: -10px;
+  }
+  .waves .transparent-waves::before {
+    background-position: -165px 0;
+  }
+  .waves .transparent-waves::after {
+    background-position: 165px 0;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .waves .transparent-waves {
+    top: -40px;
+  }
+  .waves .transparent-waves::before {
+    background-position: -185px 0;
+  }
+  .waves .transparent-waves::after {
+    background-position: 185px 0;
   }
 }
 .top-nav {
@@ -611,101 +701,6 @@ main .main-content .gator-quote {
   flex-flow: column wrap;
   position: relative;
   background-color: #fff2b3;
-}
-main .main-content .gator-quote::before {
-  content: '';
-  background-image: url('../assets/rounded-border-top-users.svg');
-  background-position: 0 0;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 50px;
-  top: -50px;
-  width: 100%;
-  position: absolute;
-}
-@media screen and (min-width: 764px) {
-  main .main-content .gator-quote::before {
-    top: -65px;
-    height: 65px;
-  }
-}
-@media screen and (min-width: 1000px) {
-  main .main-content .gator-quote::before {
-    top: -85px;
-    height: 86px;
-  }
-}
-main .main-content .gator-quote .rounded-border {
-  background-color: transparent;
-  position: relative;
-}
-@media screen and (min-width: 700px) {
-  main .main-content .gator-quote .rounded-border {
-    margin-bottom: 50px;
-  }
-}
-@media screen and (min-width: 900px) {
-  main .main-content .gator-quote .rounded-border {
-    margin-bottom: 100px;
-  }
-}
-main .main-content .gator-quote .rounded-border::before,
-main .main-content .gator-quote .rounded-border::after {
-  content: '';
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 100%;
-  background-image: url('../assets/rounded-border.svg');
-  background-size: 100%;
-  height: 250px;
-  top: -78px;
-  z-index: 0;
-}
-main .main-content .gator-quote .rounded-border::before {
-  content: '';
-  background-position: -100px 0;
-}
-main .main-content .gator-quote .rounded-border::after {
-  content: '';
-  background-position: 100px 0;
-}
-@media screen and (min-width: 416px) {
-  main .main-content .gator-quote .rounded-border::before {
-    background-position: -120px 0;
-  }
-  main .main-content .gator-quote .rounded-border::after {
-    background-position: 120px 0;
-  }
-}
-@media screen and (min-width: 578px) {
-  main .main-content .gator-quote .rounded-border::before {
-    background-position: -130px 0;
-  }
-  main .main-content .gator-quote .rounded-border::after {
-    background-position: 130px 0;
-  }
-}
-@media screen and (min-width: 764px) {
-  main .main-content .gator-quote .rounded-border {
-    top: -10px;
-  }
-  main .main-content .gator-quote .rounded-border::before {
-    background-position: -165px 0;
-  }
-  main .main-content .gator-quote .rounded-border::after {
-    background-position: 165px 0;
-  }
-}
-@media screen and (min-width: 1000px) {
-  main .main-content .gator-quote .rounded-border {
-    top: -40px;
-  }
-  main .main-content .gator-quote .rounded-border::before {
-    background-position: -185px 0;
-  }
-  main .main-content .gator-quote .rounded-border::after {
-    background-position: 185px 0;
-  }
 }
 main .main-content .gator-quote div {
   position: relative;
@@ -1051,4 +1046,11 @@ main .main-content .testimonials .btn.signup:focus {
 main .main-content .testimonials .btn.signup:hover {
   cursor: pointer;
   box-shadow: 0 0 3px 0 #a55;
+}
+.main-content.__about {
+  background-color: #fff2b3;
+}
+.main-content.__about .team {
+  position: relative;
+  z-index: 5;
 }
