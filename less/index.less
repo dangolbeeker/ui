@@ -86,20 +86,22 @@ body {
         align-items: center;
         .p-container {
             margin: 5%;
+            margin-bottom: 0;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap-reverse;
             margin-top: 15%;
+            background-image: url("../assets/bubble.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
             p {
-                border: 1px solid @blue;
-                border-radius: 6px;
-                background-color: white;
-                padding: 5%;
+                padding: 7%;
+                margin-top: 0;
             }
             img {
                 padding-left: 40%;
                 padding-bottom: 5%;
-                border-bottom: 1px solid grey;
             }
         }
         .middle-a {
@@ -109,6 +111,10 @@ body {
         background-position: center;
         // background-size: auto;
         min-height: 1100px;
+            .logo-container {
+                display: flex;
+                justify-content: center;
+            }
 
             .descriptions {
                 display: flex;
@@ -127,9 +133,13 @@ body {
                 }
                 .achievable {
                     display: flex;
-                    align-items: center;
                     flex-wrap: wrap;
                     width: 30%;
+                    #trophy {
+                        height: 30px;
+                        width: 30px;
+                        margin-top: 7%;
+                    }
                     @media @mobile {
                         width: 70%;
                     }
@@ -145,7 +155,6 @@ body {
                 }
                 .goals {
                     display: flex;
-                    align-items: center;
                     flex-wrap: wrap;
                     width: 30%;
                     @media @mobile {
