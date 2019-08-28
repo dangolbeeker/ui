@@ -5,15 +5,16 @@
 body {
     font-family: 'Nunito', sans-serif;
 
-    header {
-
+    .mainBody {
         background-image: url(../assets/yellowmap.png);
         background-color: #0A4699;
         background-repeat: no-repeat;
         background-position: 167% 0%, 50% 85%;
         background-size: auto, 100%;
-        min-height: 280vh;
+        min-height: 240vh;
 
+        header{
+        
             #logoContainer{
                 display: flex;
                 font-size: 2rem;
@@ -63,6 +64,8 @@ body {
             margin: 0 0 0 55%;
         }
 
+    }
+
         .about {
             margin: 10% 0 0 0;
             height: 90vh;
@@ -92,7 +95,7 @@ body {
                     width: 80%;
                     height: 15vh;
                     margin: 10% auto 0 auto;
-                    padding: 5%;
+                    padding: 10% 5% 5% 5%;
                     font-size: 1.25rem;
                     color: #0A4699;
                     
@@ -249,4 +252,193 @@ body {
             margin: 3.5% 0 0 0;
         }
     }
+}
+
+@media @phone {
+
+    body {
+        max-width: 100%;
+        
+        .mainBody {
+            background-image: url(../assets/yellowmap.png);
+            background-color: #0A4699;
+            background-repeat: no-repeat;
+            background-position: 50% 10%;
+            background-size: contain;
+            min-height: 240vh;
+
+            header {
+
+                h1 {
+                    margin: auto;
+                    text-align: center;
+                    font-size: 2.5rem;
+                }
+
+                #btn1 {
+                    .buttons(1.25rem, #F7E486, #0A4699, 30%, center, center, 1.5% 5%, 5px);
+                    margin: 0 0 2% 30%;
+                }
+        
+                #btn2 {
+                    .buttons(1.25rem, #0A4699, #F7E486, 30%, center, center, 1.5% 5%, 5px);
+                    border: 1px solid #F7E486;
+                    margin: 0 0 0 30%;
+                }
+
+            }
+
+            .about {
+                margin: 10% 0 0 0;
+                height: 90vh;
+                background-image: url(../assets/topround.svg), url(../assets/topopache.svg), url(../assets/topopache.svg);
+                background-size: contain, cover, cover;
+                background-position: 50% 10%, 100% 0%, 0 0%;
+                background-repeat: no-repeat;
+                
+    
+                #aboutTop {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    width: 90%;
+                    margin: 0 auto 0 auto;
+                    border-radius: 5px;
+                    background-image: url(../assets/longbubble.svg);
+                    background-size: contain;
+                    background-position: 50% 100%;
+                    background-repeat: no-repeat;
+                    
+                
+                    
+    
+                    p {
+                        background-image: none;
+                        width: 90%;
+                        height: 5vh;
+                        margin: 10% auto 0 auto;
+                        padding: 5% 0 5% 0;
+                        font-size: 1rem;
+                        color: #0A4699;
+                        
+                    }
+                }
+    
+                #gator {
+                    margin: 0 0 0 75%;
+                    
+                }
+    
+                #aboutBottom {        
+                    height: 60vh;
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    align-content: center;
+                    padding: 5% 0 0 0;
+                    border-top: 2px solid #0A4699;
+                    
+                
+    
+                    .bottomInfo {
+                        width: 90%;
+                        
+    
+                        h3 {
+                            font-size: 1rem;
+                            padding: 0 0 0 11%;
+    
+                            img {
+                                margin: 0 0 0 1%;
+                            }
+                        
+                        }
+    
+                        p {
+                            margin: 5% 0 0 0;
+                            padding: 0 0 0 11%;
+                            width: 85%;
+                            font-size: 1.25rem;
+                        }
+                    }
+                }
+            }
+
+            #middleText {
+                margin: 5% auto 0 auto;
+                font-size: 1.5rem;
+                text-align: center;
+                color: #FFF2B3;
+                border-bottom: 2px solid #FFF2B3;
+                width: 22.5%;
+                padding: 0 0 2% 0;
+            
+            }
+            #bottomHalf {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                background-image: url(../assets/Rounded.svg);
+                background-size: cover;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                height: 60vh;
+                margin: 5% 0 0 0;
+    
+                #userFeedBack {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    height: 50vh;
+                    margin: 7.5% auto 0 auto;
+                    width: 90%;
+                    
+    
+                    .person {
+                        font-size: 1rem;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: space-evenly;
+                        margin: auto 0 auto 20%;
+    
+                        p {
+                            display: flex;
+                            justify-content: space-evenly;
+                            width: 85%;
+                            margin: 0 0 5% 0;
+    
+                            img {
+                                border-radius: 50px;
+                                width: 15%;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+    
+                #bottomBtn {
+                    .buttons(1.25rem, #0A4699, #F7E486, 30%, center, center, 1.5% 5%, 5px);
+                    margin: 0 auto 5% auto;
+                }
+            }
+
+            .contactInfo {
+
+                #socials{
+                    margin: 0 0 0 10%;
+
+                    p {
+                        padding: 5% 0 0 0;
+                    }
+
+                    img {
+                        height: auto;
+                        width: 50%;
+                        margin: 0 0 0 25%;
+                    }
+                }
+            }  
+        }
+    }    
 }
