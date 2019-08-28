@@ -1073,12 +1073,26 @@ main .main-content .testimonials .btn.signup:hover::after {
   justify-content: center;
 }
 .main-content.__about .team figure {
-  width: 49%;
+  width: 100%;
   padding: 15px 0;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  outline: 1px solid red;
+}
+@media screen and (min-width: 700px) {
+  .main-content.__about .team figure {
+    width: 49%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .main-content.__about .team figure {
+    width: 31%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-content.__about .team figure {
+    width: 24%;
+  }
 }
 .main-content.__about .team figure div {
   position: relative;

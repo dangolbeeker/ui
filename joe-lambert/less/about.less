@@ -8,12 +8,20 @@
     justify-content: center;
 
     figure {
-      width: 49%;
+      width: 100%;
       padding: 15px 0;
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
-      outline: 1px solid red;
+      @media @tablet {
+        width: 49%;
+      }
+      @media @tablet-large {
+        width: 31%;
+      }
+      @media @desktop {
+        width: 24%;
+      }
 
       div {
         position: relative;
