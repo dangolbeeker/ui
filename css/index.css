@@ -65,12 +65,18 @@
   font-size: 2rem;
   border: 1px solid #F7E486;
   border-radius: 6px;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   padding: 8px;
   color: #0A4699;
   background-color: #F7E486;
   text-align: center;
-  width: 100%;
+  width: 200px;
+}
+@media (max-width: 500px) {
+  .button {
+    width: 100%;
+  }
 }
 .button:hover {
   color: #F7E486;
@@ -391,4 +397,7 @@ body .copy {
   body .copy {
     font-size: 1.4rem;
   }
+}
+.team {
+  margin-bottom: 5%;
 }
