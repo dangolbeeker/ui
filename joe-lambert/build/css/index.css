@@ -610,12 +610,12 @@ header .cta-content div .btn.signup {
   transition: 200ms;
 }
 header .cta-content div .btn.signup:focus {
-  box-shadow: 0 0 3px 0 #a55;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
 }
 header .cta-content div .btn.signup:hover {
   cursor: pointer;
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem #a55;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 header .cta-content div .btn.signup:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
@@ -632,12 +632,12 @@ header .cta-content div .btn.signin {
   transition: 200ms;
 }
 header .cta-content div .btn.signin:focus {
-  box-shadow: 0 0 3px 0 #a55;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
 }
 header .cta-content div .btn.signin:hover {
   cursor: pointer;
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem #a55;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 header .cta-content div .btn.signin:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
@@ -1051,12 +1051,12 @@ main .main-content .testimonials .btn.signup {
   transition: 200ms;
 }
 main .main-content .testimonials .btn.signup:focus {
-  box-shadow: 0 0 3px 0 #a55;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
 }
 main .main-content .testimonials .btn.signup:hover {
   cursor: pointer;
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem #a55;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 main .main-content .testimonials .btn.signup:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
