@@ -287,7 +287,6 @@ body .middle .middle-b .testimonials {
 body .middle .middle-b .testimonials p {
   color: #0A4699;
   margin-bottom: 0;
-  padding: 20px;
 }
 @media (max-width: 500px) {
   body .middle .middle-b .testimonials p {
@@ -397,7 +396,4 @@ body .copy {
   body .copy {
     font-size: 1.4rem;
   }
-}
-.team {
-  margin-bottom: 5%;
 }
