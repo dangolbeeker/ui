@@ -4,6 +4,9 @@
   padding: 10px;
   padding-top: 25px;
   color: @main-yellow;
+  @media @tablet-large {
+    flex-flow: row wrap;
+  }
 
   h4 {
     font-size: 2.1rem;
@@ -31,6 +34,10 @@
       display: flex;
       flex-flow: column wrap;
       justify-content: flex-start;
+    }
+
+    @media @tablet-large {
+      width: 31%;
     }
   } // end section
 

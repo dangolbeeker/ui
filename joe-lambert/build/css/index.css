@@ -550,6 +550,11 @@ header .cta-content div .btn.signin:hover {
   padding-top: 25px;
   color: #fff2b3;
 }
+@media screen and (min-width: 900px) {
+  .marketing-footer {
+    flex-flow: row wrap;
+  }
+}
 .marketing-footer h4 {
   font-size: 2.1rem;
   margin-bottom: 5px;
@@ -573,6 +578,11 @@ header .cta-content div .btn.signin:hover {
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
+}
+@media screen and (min-width: 900px) {
+  .marketing-footer section {
+    width: 31%;
+  }
 }
 .marketing-footer .social-links h4 {
   text-indent: -9999px;
