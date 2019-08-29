@@ -1,0 +1,1221 @@
+body {
+  font-family: 'Nunito', sans-serif;
+}
+.break {
+  display: block;
+}
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type='checkbox'],
+[type='radio'] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Nunito', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 4.1rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #0a4699;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+span.logo {
+  display: inline-flex;
+  text-indent: -9999px;
+  background-image: url('../assets/alligator.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.waves {
+  position: relative;
+}
+.waves .solid-wave::before {
+  content: '';
+  background-image: url('../assets/rounded-border-top-users.svg');
+  background-position: 0 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 50px;
+  top: -50px;
+  width: 100%;
+  position: absolute;
+}
+@media screen and (min-width: 764px) {
+  .waves .solid-wave::before {
+    top: -65px;
+    height: 65px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .waves .solid-wave::before {
+    top: -85px;
+    height: 86px;
+  }
+}
+.waves .transparent-waves {
+  background-color: transparent;
+  position: relative;
+}
+@media screen and (min-width: 700px) {
+  .waves .transparent-waves {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .waves .transparent-waves {
+    margin-bottom: 100px;
+  }
+}
+.waves .transparent-waves::before,
+.waves .transparent-waves::after {
+  content: '';
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  background-image: url('../assets/rounded-border.svg');
+  background-size: 100%;
+  height: 250px;
+  top: -78px;
+  z-index: 0;
+}
+.waves .transparent-waves::before {
+  content: '';
+  background-position: -100px 0;
+}
+.waves .transparent-waves::after {
+  content: '';
+  background-position: 100px 0;
+}
+@media screen and (min-width: 416px) {
+  .waves .transparent-waves::before {
+    background-position: -120px 0;
+  }
+  .waves .transparent-waves::after {
+    background-position: 120px 0;
+  }
+}
+@media screen and (min-width: 578px) {
+  .waves .transparent-waves::before {
+    background-position: -130px 0;
+  }
+  .waves .transparent-waves::after {
+    background-position: 130px 0;
+  }
+}
+@media screen and (min-width: 764px) {
+  .waves .transparent-waves {
+    top: -10px;
+  }
+  .waves .transparent-waves::before {
+    background-position: -165px 0;
+  }
+  .waves .transparent-waves::after {
+    background-position: 165px 0;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .waves .transparent-waves {
+    top: -40px;
+  }
+  .waves .transparent-waves::before {
+    background-position: -185px 0;
+  }
+  .waves .transparent-waves::after {
+    background-position: 185px 0;
+  }
+}
+.top-nav {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 200ms;
+  transform: translate3d(0, 0, 0);
+  background-color: #fff2b3;
+  padding: 0 15px;
+  box-shadow: 0px -1px 15px 0px rgba(0, 0, 0, 0.2);
+}
+.top-nav.hidden {
+  transform: translate3d(0, -100%, 0);
+  box-shadow: 0px -1px 15px 0px rgba(0, 0, 0, 0);
+}
+.top-nav span.logo {
+  width: 60px;
+  height: 60px;
+}
+.top-nav div {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+}
+.top-nav .btn {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.3rem;
+  position: relative;
+  z-index: 5;
+  margin-left: 15px;
+}
+.top-nav .btn.signup {
+  border: 2px solid #0a4699;
+  outline: none;
+  color: #fff2b3;
+  background-color: #0a4699;
+  padding: 5px;
+  border-radius: 6px;
+  width: 100px;
+  transition: 200ms;
+}
+.top-nav .btn.signup:focus {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+.top-nav .btn.signup:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.top-nav .btn.signup:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.top-nav .btn.signin {
+  border: 2px solid #0a4699;
+  outline: none;
+  color: #0a4699;
+  background-color: transparent;
+  padding: 5px;
+  border-radius: 6px;
+  width: 100px;
+  transition: 200ms;
+}
+.top-nav .btn.signin:focus {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+.top-nav .btn.signin:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.top-nav .btn.signin:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+@media screen and (min-width: 700px) {
+  .top-nav .btn {
+    font-size: 1.6rem;
+  }
+  .top-nav .btn.signin,
+  .top-nav .btn.signup {
+    padding: 10px;
+    width: 130px;
+  }
+}
+header {
+  background-image: url('../assets/map-yellow.png');
+  background-color: #0a4699;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center right;
+}
+header nav .site-title {
+  position: relative;
+  height: 180px;
+  max-width: 433px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+header nav .site-title::before,
+header nav .site-title::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/small-wave.svg');
+  background-repeat: no-repeat;
+  background-size: 105%;
+  background-position: -20px center;
+}
+header nav .site-title::before {
+  z-index: 1;
+  top: 23px;
+  background-size: 100%;
+  opacity: 0.75;
+  left: 0px;
+}
+header nav .site-title::after {
+  z-index: 2;
+}
+header nav .site-title a {
+  position: relative;
+  z-index: 10;
+  color: #0a4699;
+  text-decoration: none;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav .site-title a h1 {
+  font-size: 2.3rem;
+  font-weight: 400;
+  padding: 0px 25px;
+  padding-top: 9px;
+}
+header nav .site-title span.logo {
+  position: relative;
+  z-index: 10;
+  width: 100px;
+  height: 52px;
+}
+header .cta-content {
+  padding-bottom: 25px;
+}
+@media screen and (min-width: 700px) {
+  header .cta-content {
+    padding-bottom: 50px;
+    padding-right: 10vw;
+  }
+}
+@media screen and (min-width: 900px) {
+  header .cta-content {
+    padding-bottom: 100px;
+    padding-right: 20vw;
+    padding-left: 10vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header .cta-content {
+    padding-right: 25vw;
+  }
+}
+header .cta-content h2 {
+  margin-top: 50px;
+  margin-bottom: 35px;
+  margin-left: 25px;
+  color: #fff2b3;
+  font-weight: 400;
+}
+@media screen and (min-width: 700px) {
+  header .cta-content h2 {
+    font-size: 3.6rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .cta-content h2 {
+    font-size: 4.8rem;
+  }
+}
+header .cta-content div {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+@media screen and (min-width: 700px) {
+  header .cta-content div {
+    align-items: flex-end;
+    transform: translate3d(0, -92px, 0);
+  }
+}
+header .cta-content div .btn {
+  margin: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+header .cta-content div .btn.signup {
+  border: 2px solid #fff2b3;
+  outline: none;
+  color: #0a4699;
+  background-color: #fff2b3;
+  padding: 10px;
+  border-radius: 6px;
+  width: 200px;
+  transition: 200ms;
+}
+header .cta-content div .btn.signup:focus {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+header .cta-content div .btn.signup:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+header .cta-content div .btn.signup:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+header .cta-content div .btn.signin {
+  border: 2px solid #fff2b3;
+  outline: none;
+  color: #fff2b3;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 6px;
+  width: 200px;
+  transition: 200ms;
+}
+header .cta-content div .btn.signin:focus {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+header .cta-content div .btn.signin:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+header .cta-content div .btn.signin:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.marketing-footer {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 10px;
+  padding-top: 25px;
+  color: #fff2b3;
+}
+@media screen and (min-width: 900px) {
+  .marketing-footer {
+    flex-flow: row wrap;
+  }
+}
+.marketing-footer h4 {
+  font-size: 2.1rem;
+  margin-bottom: 5px;
+}
+.marketing-footer a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+.marketing-footer section {
+  margin-bottom: 30px;
+}
+.marketing-footer section:last-of-type {
+  margin-bottom: 0;
+}
+.marketing-footer section h4 {
+  margin-bottom: 10px;
+}
+.marketing-footer section div {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 900px) {
+  .marketing-footer section {
+    width: 31%;
+  }
+}
+.marketing-footer .social-links h4 {
+  text-indent: -9999px;
+  height: 0;
+}
+.marketing-footer .social-links div {
+  flex-flow: row wrap;
+}
+.marketing-footer .social-links div a {
+  width: 33%;
+  text-align: center;
+  font-size: 2.8rem;
+}
+.copyright {
+  color: #fff2b3;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 1.2rem;
+}
+main .main-content {
+  color: #073069;
+  margin-top: 100px;
+}
+main .main-content .gator-quote {
+  display: flex;
+  flex-flow: column wrap;
+  position: relative;
+  background-color: #fff2b3;
+}
+main .main-content .gator-quote div {
+  position: relative;
+  z-index: 5;
+}
+main .main-content .gator-quote div p {
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 0;
+  border: 0.2rem solid #0a4699;
+  border-radius: 9px;
+  background-color: #fff;
+}
+@media screen and (min-width: 700px) {
+  main .main-content .gator-quote div p {
+    font-size: 1.8rem;
+    padding: 20px;
+    padding-right: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
+@media screen and (min-width: 900px) {
+  main .main-content .gator-quote div p {
+    font-size: 2.1rem;
+    padding: 30px;
+    padding-right: 15px;
+    margin-right: 75px;
+    margin-left: 75px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .main-content .gator-quote div p {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main .main-content .gator-quote div p {
+    margin-right: 160px;
+    margin-left: 160px;
+  }
+}
+main .main-content .gator-quote div .triangle {
+  position: absolute;
+  right: 145px;
+  bottom: 2px;
+}
+@media screen and (min-width: 900px) {
+  main .main-content .gator-quote div .triangle {
+    right: 225px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main .main-content .gator-quote div .triangle {
+    right: 355px;
+  }
+}
+main .main-content .gator-quote div .triangle::before,
+main .main-content .gator-quote div .triangle::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom: 0;
+}
+main .main-content .gator-quote div .triangle::before {
+  bottom: -1.8rem;
+  left: 1.8rem;
+  border-top-color: #0a4699;
+  border-width: 1.8rem;
+}
+main .main-content .gator-quote div .triangle::after {
+  bottom: -1.5rem;
+  left: 2rem;
+  border-top-color: #fff;
+  border-width: 1.6rem;
+}
+main .main-content .gator-quote span.logo {
+  width: 100px;
+  height: 65px;
+  right: 10px;
+  float: right;
+  position: relative;
+  z-index: 5;
+}
+@media screen and (min-width: 900px) {
+  main .main-content .gator-quote span.logo {
+    right: 10%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main .main-content .gator-quote span.logo {
+    right: 18%;
+  }
+}
+main .main-content .selling-points {
+  background-color: #fff2b3;
+  padding: 10px 0;
+  padding-top: 55px;
+  position: relative;
+  z-index: 5;
+}
+@media screen and (min-width: 900px) {
+  main .main-content .selling-points {
+    padding-top: 125px;
+  }
+}
+@media screen and (min-width: 900px) {
+  main .main-content .selling-points .flex-container {
+    padding-top: 125px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+main .main-content .selling-points .border-top {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 0;
+  height: 1px;
+  background-color: #0a4699;
+  margin-top: 25px;
+}
+@media screen and (min-width: 900px) {
+  main .main-content .selling-points .border-top {
+    margin-top: 50px;
+    left: 5%;
+    right: 5%;
+  }
+}
+main .main-content .selling-points section {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px;
+}
+@media screen and (min-width: 900px) {
+  main .main-content .selling-points section {
+    width: 31%;
+  }
+}
+main .main-content .selling-points section h3,
+main .main-content .selling-points section span {
+  width: auto;
+}
+main .main-content .selling-points section h3 {
+  margin-right: 15px;
+  font-weight: 400;
+  font-size: 2.1rem;
+}
+main .main-content .selling-points section span {
+  transform: translate3d(0, -5px, 0);
+}
+main .main-content .selling-points section p {
+  width: 100%;
+  margin: 15px 0;
+  margin-bottom: 35px;
+  padding-right: 25px;
+}
+main .main-content .testimonials {
+  background-color: #fff2b3;
+  padding-bottom: 25px;
+}
+@media screen and (min-width: 900px) {
+  main .main-content .testimonials {
+    padding-bottom: 90px;
+  }
+}
+main .main-content .testimonials .testimonials-title {
+  background-color: #0a4699;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 90px 0;
+  width: 100%;
+}
+main .main-content .testimonials .testimonials-title::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 1px;
+  background-color: #fff2b3;
+  bottom: 65px;
+}
+@media screen and (min-width: 684px) {
+  main .main-content .testimonials .testimonials-title {
+    padding: 120px 0;
+  }
+  main .main-content .testimonials .testimonials-title::after {
+    bottom: 85px;
+  }
+}
+@media screen and (min-width: 844px) {
+  main .main-content .testimonials .testimonials-title {
+    padding: 140px 0;
+  }
+  main .main-content .testimonials .testimonials-title::after {
+    bottom: 105px;
+  }
+}
+@media screen and (min-width: 1152px) {
+  main .main-content .testimonials .testimonials-title {
+    padding: 160px 0;
+  }
+  main .main-content .testimonials .testimonials-title::after {
+    bottom: 125px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  main .main-content .testimonials .testimonials-title {
+    padding: 180px 0;
+  }
+  main .main-content .testimonials .testimonials-title::after {
+    bottom: 145px;
+  }
+}
+main .main-content .testimonials .testimonials-title h3 {
+  color: #fff2b3;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+main .main-content .testimonials .testimonials-title h3::before,
+main .main-content .testimonials .testimonials-title h3::after {
+  content: '';
+  background-image: url('../assets/rounded-border-top-users.svg');
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 100px;
+  z-index: 0;
+}
+main .main-content .testimonials .testimonials-title h3::before {
+  top: -145px;
+  transform: rotate(180deg);
+}
+main .main-content .testimonials .testimonials-title h3::after {
+  bottom: -145px;
+}
+@media screen and (min-width: 684px) {
+  main .main-content .testimonials .testimonials-title h3::before {
+    top: -165px;
+  }
+  main .main-content .testimonials .testimonials-title h3::after {
+    bottom: -165px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  main .main-content .testimonials .testimonials-title h3::before {
+    top: -180px;
+  }
+  main .main-content .testimonials .testimonials-title h3::after {
+    bottom: -180px;
+  }
+}
+@media screen and (min-width: 900px) {
+  main .main-content .testimonials .flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom: 90px;
+  }
+}
+main .main-content .testimonials figure {
+  padding: 10px;
+  display: inline-flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+  font-size: 1.6rem;
+  margin: 20px 0;
+  position: relative;
+  z-index: 5;
+}
+main .main-content .testimonials figure:first-of-type {
+  margin-top: 35px;
+  margin-bottom: 0;
+}
+main .main-content .testimonials figure:last-of-type {
+  margin-bottom: 35px;
+  margin-top: 0;
+}
+@media screen and (min-width: 900px) {
+  main .main-content .testimonials figure {
+    width: 31%;
+    margin-top: 35px;
+    margin-bottom: 90px;
+  }
+  main .main-content .testimonials figure:first-of-type,
+  main .main-content .testimonials figure:last-of-type {
+    margin-bottom: 90px;
+    margin-top: 35px;
+  }
+}
+main .main-content .testimonials figure blockquote {
+  width: 100%;
+  padding-right: 25px;
+  margin-bottom: 15px;
+}
+main .main-content .testimonials figure figcaption {
+  width: auto;
+  margin-right: 10px;
+}
+@media screen and (min-width: 900px) {
+  main .main-content .testimonials figure figcaption {
+    margin-top: auto;
+  }
+}
+main .main-content .testimonials figure img {
+  width: 45px;
+  border-radius: 100%;
+  transform: translate3d(0, 12px, 0);
+}
+main .main-content .testimonials .btn {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.6rem;
+  position: relative;
+  z-index: 5;
+}
+main .main-content .testimonials .btn.signup {
+  border: 2px solid #0a4699;
+  outline: none;
+  color: #fff2b3;
+  background-color: #0a4699;
+  padding: 10px;
+  border-radius: 6px;
+  width: 200px;
+  transition: 200ms;
+}
+main .main-content .testimonials .btn.signup:focus {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+main .main-content .testimonials .btn.signup:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+main .main-content .testimonials .btn.signup:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.main-content.__about {
+  background-color: #fff2b3;
+}
+.main-content.__about .team {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.main-content.__about .team figure {
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+@media screen and (min-width: 700px) {
+  .main-content.__about .team figure {
+    width: 49%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .main-content.__about .team figure {
+    width: 31%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-content.__about .team figure {
+    width: 24%;
+  }
+}
+.main-content.__about .team figure div {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-color: lightpink;
+  background-size: cover;
+  background-position: center;
+  background-image: url('') !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 100%;
+}
+.main-content.__about .team figure div img {
+  position: absolute;
+  width: 100%;
+}
+.main-content.__about .team figure h3 {
+  font-size: 2.1rem;
+  margin: 5px 0;
+}
+.main-content.__about .team figure h4 {
+  font-size: 1.6rem;
+}
+.main-content.__about .team figure .btn {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.6rem;
+  border: 2px solid #fff2b3;
+  outline: none;
+  color: #0a4699;
+  background-color: #fff2b3;
+  padding: 10px;
+  border-radius: 6px;
+  width: 200px;
+  transition: 200ms;
+}
+.main-content.__about .team figure .btn:focus {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+.main-content.__about .team figure .btn:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.main-content.__about .team figure .btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
