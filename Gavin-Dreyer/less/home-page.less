@@ -32,6 +32,7 @@ body {
         min-height: 240vh;
 
         header{
+            
             #logoContainer{
                 display: flex;
                 font-size: 2rem;
@@ -67,6 +68,7 @@ body {
             margin: 0 0 2% 55%;
             box-shadow: 0 0 20px black; 
             
+            
         }
 
         #btn1:hover {
@@ -78,6 +80,13 @@ body {
             border: 1px solid #F7E486;
             margin: 0 0 0 55%;
             box-shadow: 0 0 20px black;
+            
+
+            a {
+                text-decoration: none;
+                font-size: 1.25rem;
+                color: #F7E486;
+            }
         }
 
         #btn2:hover {
@@ -90,8 +99,8 @@ body {
             margin: 5% 0 0 0;
             height: 130vh;
             background-image: url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/topopache.svg), url(../assets/topopache.svg);
-            background-size: 50%, 75%, 75%, 75%, 75%, 75%, 75%, 75%, 60%, 60%;
-            background-position: 50% 13.5%, 50% 93%, 0 92%, 100% 92%, 100% 50%, 100% 25%, 0 25%, 0 50%, 0% 20%, 100% 20%;
+            background-size: 50%, 80%, 75%, 75%, 75%, 75%, 75%, 75%, 60%, 60%;
+            background-position: 50% 19.5%, 50% 105%, 0 105%, 100% 105%, 100% 50%, 100% 25%, 0 25%, 0 50%, 0% 20%, 100% 20%;
             background-repeat: no-repeat;
 
             #aboutTop {
@@ -160,7 +169,7 @@ body {
         }
 
         #middleText {
-            margin: 0 auto 0 auto;
+            margin: 5% auto 0 auto;
             font-size: 1.5rem;
             text-align: center;
             color: #FFF2B3;
@@ -281,9 +290,13 @@ body {
 
 @media @phone {
 
+    *{
+        border: @brdr;
+    }
+
     body {
         max-width: 100%;
-        height: 380vh;
+        height: 370vh;
 
         .mainBody {
             background-image: url(../assets/yellowmap.png);
@@ -296,9 +309,10 @@ body {
 
                 #logoContainer {
                     height: 50vh;
+                    width: 100%;
 
                     img {
-                        height: 10vh;
+                        height: 5vh;
                         padding: 5% 0 0 0;
                     }
                 }
@@ -324,10 +338,10 @@ body {
 
             .about {
                 margin: 10% 0 0 0;
-                height: 120vh;            
-                background-image: url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/topopache.svg), url(../assets/topopache.svg);
-                background-size: 90%, 90%, 90%, 90%, 90%, 90%, 60%, 60%;
-                background-position: 0 92%, 100% 92%, 100% 50%, 100% 25%, 0 25%, 0 50%, 0% 22.5%, 100% 22.5%;
+                height: 130vh;            
+                background-image: url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/topopache.svg), url(../assets/topopache.svg);
+                background-size: 100%, 100%, 100%, 100%, 100%, 100%, 100%, 60%, 60%;
+                background-position: 0 100%, 0 90%, 0 80%, 100% 25%, 100% 25%, 0 25%, 0 50%, 0% 24%, 100% 24%;
                 background-repeat: no-repeat;
                 max-width: 100%;
                 
@@ -337,7 +351,7 @@ body {
                     flex-direction: column;
                     align-items: flex-end;
                     max-width: 90%;
-                    padding: 35% 0 0 0;
+                    padding: 70% 0 0 0;
                     margin: 0 auto 0 auto;
                     border-radius: 5px;
                     background-image: url(../assets/longbubble.svg);
@@ -351,10 +365,10 @@ body {
                     p {
                         background-image: none;
                         width: 98%;
-                        height: 5vh;
+                        height: 2.5vh;
                         margin: 0 auto 0 auto;
-                        padding: 5% 0 12.5% 0;
-                        font-size: 1rem;
+                        padding: 0 0 17.5% 0;
+                        font-size: .9rem;
                         color: #0A4699;
                         
                     }
@@ -462,10 +476,12 @@ body {
             }
 
             .contactInfo {
-                margin: 5% auto 20% auto;
+                display: flex;
+                flex-direction: column;
+                margin: 5% 0 20% 0;
 
                 #socials{
-                    margin: 0 0 0 10%;
+                    margin: 0 0 0 0;
 
                     p {
                         padding: 5% 0 0 0;

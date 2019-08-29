@@ -349,9 +349,10 @@ body .mainBody footer {
   }
   body .mainBody header #logoContainer {
     height: 50vh;
+    width: 100%;
   }
   body .mainBody header #logoContainer img {
-    height: 10vh;
+    height: 5vh;
     padding: 5% 0 0 0;
   }
   body .mainBody #teamContainer {
@@ -444,10 +445,12 @@ body .mainBody footer {
     background-position: center;
   }
   body .mainBody .contactInfo {
-    margin: 5% auto 20% auto;
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0 20% 0;
   }
   body .mainBody .contactInfo #socials {
-    margin: 0 0 0 10%;
+    margin: 0 0 0 0;
   }
   body .mainBody .contactInfo #socials p {
     padding: 5% 0 0 0;
