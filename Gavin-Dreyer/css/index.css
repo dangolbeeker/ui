@@ -392,6 +392,7 @@ body .mainBody footer {
   }
   body .mainBody header #logoContainer {
     height: 50vh;
+    font-size: 1.5rem;
     width: 100%;
   }
   body .mainBody header #logoContainer img {
@@ -408,32 +409,32 @@ body .mainBody footer {
     font-size: 1.25rem;
     background: #F7E486;
     color: #0A4699;
-    width: 30%;
+    width: 40%;
     justify-content: center;
     align-items: center;
     padding: 1.5% 5%;
     border-radius: 5px;
-    margin: 5% 0 4% 30%;
+    margin: 5% 0 4% 25%;
   }
   body .mainBody header #btn2 {
     display: flex;
     font-size: 1.25rem;
     background: #0A4699;
     color: #F7E486;
-    width: 30%;
+    width: 40%;
     justify-content: center;
     align-items: center;
     padding: 1.5% 5%;
     border-radius: 5px;
     border: 1px solid #F7E486;
-    margin: 0 0 0 30%;
+    margin: 0 0 0 25%;
   }
   body .mainBody .about {
     margin: 10% 0 0 0;
     height: 130vh;
-    background-image: url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/topopache.svg), url(../assets/topopache.svg);
-    background-size: 100%, 100%, 100%, 100%, 100%, 100%, 100%, 60%, 60%;
-    background-position: 0 100%, 0 90%, 0 80%, 100% 25%, 100% 25%, 0 25%, 0 50%, 0% 24%, 100% 24%;
+    background-image: url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/hugeCenter.svg), url(../assets/topopache.svg), url(../assets/topopache.svg), url(../assets/hugeCenter.svg);
+    background-size: 100%, 100%, 100%, 100%, 100%, 100%, 100%, 60%, 60%, 100%;
+    background-position: 0 100%, 0 90%, 0 80%, 100% 25%, 100% 25%, 0 25%, 0 50%, 0% 24%, 100% 24%, 0 30%;
     background-repeat: no-repeat;
     max-width: 100%;
   }
@@ -442,25 +443,25 @@ body .mainBody footer {
     flex-direction: column;
     align-items: flex-end;
     max-width: 90%;
-    padding: 70% 0 0 0;
-    margin: 0 auto 0 auto;
+    padding: 070% 0 0 0;
+    margin: 0% auto 0 auto;
     border-radius: 5px;
-    background-image: url(../assets/longbubble.svg);
-    background-size: contain;
+    background-image: url(../assets/textbubble.svg);
+    background-size: 75%;
     background-position: 50% 90%;
     background-repeat: no-repeat;
   }
   body .mainBody .about #aboutTop p {
     background-image: none;
-    width: 98%;
+    width: 65%;
     height: 2.5vh;
     margin: 0 auto 0 auto;
-    padding: 0 0 17.5% 0;
-    font-size: 0.9rem;
+    padding: 0% 0 40% 0;
+    font-size: 0.85rem;
     color: #0A4699;
   }
   body .mainBody .about #gator {
-    margin: 0 0 0 75%;
+    margin: 0 0 0 60%;
   }
   body .mainBody .about #aboutBottom {
     height: 70vh;
@@ -541,7 +542,7 @@ body .mainBody footer {
     font-size: 1.25rem;
     background: #0A4699;
     color: #F7E486;
-    width: 30%;
+    width: 40%;
     justify-content: center;
     align-items: center;
     padding: 1.5% 5%;
@@ -553,11 +554,14 @@ body .mainBody footer {
     flex-direction: column;
     margin: 5% 0 20% 0;
   }
+  body .mainBody .contactInfo #contact nav {
+    margin: 0;
+  }
   body .mainBody .contactInfo #socials {
     margin: 0 0 0 0;
   }
   body .mainBody .contactInfo #socials p {
-    padding: 5% 0 0 0;
+    padding: 0 0 0 0;
   }
   body .mainBody .contactInfo #socials img {
     height: auto;
