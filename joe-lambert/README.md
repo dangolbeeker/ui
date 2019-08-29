@@ -1,4 +1,4 @@
-# conjugator static marketing page
+# Conjugator Static Marketing Page
 
 ## The deployed site is in the `/build` directory.
 
