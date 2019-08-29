@@ -191,6 +191,11 @@ body .mainBody header #btn1 {
   margin: 0 0 2% 55%;
   box-shadow: 0 0 20px black;
 }
+body .mainBody header #btn1 a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #0A4699;
+}
 body .mainBody header #btn1:hover {
   animation: pulse1 3s ease infinite alternate;
 }
