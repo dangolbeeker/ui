@@ -1,0 +1,289 @@
+@import "variables";
+@import "header-logo";
+@import "team-table";
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: @font-family;
+    }
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2.2rem;
+    color: @blue; 
+}
+p {
+    font-size: 2rem;
+    color: @blue;
+}
+
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: @blue;
+    overflow-x: hidden;
+    @media @mobile {
+        max-width: 100%;
+    }
+    .top {
+        display: flex;
+        flex-direction: column;
+        background-image: url("../assets/opaque-map.png");
+        background-color: @blue;
+        // background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        min-height: 500px;
+        @media @mobile {
+            margin-bottom: 10%;
+        }
+        
+
+        
+        .begin {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media @mobile {
+                display: flex;
+                flex-direction: column;
+            }
+            .begin-text {
+                h1 {
+                    color: @yellow;
+                    font-size: 4rem;
+                }
+
+            }
+            .begin-btns {
+                display: flex;
+                flex-direction: column;
+                margin: 10%;
+                button {
+                    padding: 10px 40px;
+                    border: 1px solid @yellow;
+                    border-radius: 6px;
+                    color: @yellow;
+                    background-color: rgba(72,144,243,0);
+                    margin-top: 10%;
+                    font-size: 1.7rem;
+                    @media @mobile {
+                        padding: 10px 70px;
+                    }
+                }
+            }
+        }
+    }
+    .middle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .p-container {
+            margin: 5%;
+            margin-bottom: 0;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap-reverse;
+            margin-top: 15%;
+            background-image: url("../assets/bubble.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            @media @mobile {
+                background: white;
+            }
+            p {
+                padding: 7%;
+                margin-top: 0;
+            }
+            img {
+                padding-left: 40%;
+                padding-bottom: 5%;
+            }
+        }
+        .middle-a {
+            background-image: url("../assets/middle_full_op.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        // background-size: auto;
+        min-height: 1100px;
+            .logo-container {
+                display: flex;
+                justify-content: center;
+                margin-left: 50%;
+            }
+
+            .descriptions {
+                display: flex;
+                justify-content: space-evenly;
+                min-width: 80%;
+                @media @mobile {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                h2 {
+                    padding: 10px;
+                    @media @mobile {
+                        padding: 0;
+                    }
+                }
+                .achievable {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 30%;
+                    #trophy {
+                        height: 30px;
+                        width: 30px;
+                        margin-top: 7%;
+                    }
+                    @media @mobile {
+                        width: 70%;
+                    }
+                }
+                .practical {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    width: 30%;
+                    @media @mobile {
+                        width: 70%;
+                    }
+                }
+                .goals {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 30%;
+                    @media @mobile {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+        .users h2 {
+            color: @yellow;
+            font-size: 2.6rem;
+            padding: 10px;
+            border-bottom: 1px solid;
+        }
+        .middle-b {
+            background-image: url("../assets/Rounded\ border\ testimonials\ .svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            min-height: 800px;
+            .testimonials {
+                display: flex;
+                justify-content: center;
+                align-items: baseline;
+                margin-top: 10%;
+                @media @mobile {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                p {
+                    color: @blue;
+                    margin-bottom: 0;
+                    @media @mobile {
+                        padding-top: 0;
+                    }
+                }
+                img {
+                    margin: 0 60%;
+                    border: 0px solid black;
+                    border-radius: 100%;
+                }
+                .jennifer {
+                    width: 30%;
+                    @media @mobile {
+                        width: 70%;
+                    }
+                }
+                .joey {
+                    width: 30%;
+                    @media @mobile {
+                        width: 70%;
+                    }
+                }
+                .trey {
+                    width: 30%;@media @mobile {
+                        width: 70%;
+                    }
+                }
+            }
+
+        } .btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 10%;
+            margin-bottom: 3%;
+            @media @mobile {
+                margin-top: 3%;
+                margin-bottom: 3%;
+            }
+            button {
+                padding: 10px 40px;
+                    border: 1px solid @blue;
+                    border-radius: 6px;
+                    color: @yellow;
+                    background-color: @blue;
+                    margin: 0;
+                    font-size: 1.7rem;
+                    @media @mobile {
+                        padding: 10px 70px;
+                    }
+            }
+        }
+    }
+    .contact-container {
+        display: flex;
+        margin: 0 5%;
+        @media @mobile {
+            display: flex;
+            flex-direction: column; 
+        }
+        h4, a, li {
+            font-size: 2rem;
+            list-style: none;
+            color: @yellow;
+        }
+        ul {
+            padding: 0;
+        }
+        .contact {
+            padding: 3%;
+            color: @yellow;
+        }
+        .links {
+            padding: 3%;
+        }
+        .social {
+            padding: 3%;
+            .icons {
+                display: flex;
+                img {
+                    @media @mobile {
+                        padding: 0 3%;  
+                    }
+                }
+            }
+        }
+    } .copy {
+        display: flex;
+        justify-content: center;
+        font-size: 1.7rem;
+        color: @yellow;
+        @media @mobile {
+            font-size: 1.4rem;
+        }
+    }
+}   
+
+
