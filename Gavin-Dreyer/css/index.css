@@ -126,6 +126,24 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@keyframes pulse1 {
+  0%,
+  100% {
+    background-color: #F7E486;
+  }
+  50% {
+    background-color: lightgrey;
+  }
+}
+@keyframes pulse2 {
+  0%,
+  100% {
+    background-color: #0A4699;
+  }
+  50% {
+    background-color: lightgrey;
+  }
+}
 body {
   font-family: 'Nunito', sans-serif;
 }
@@ -171,6 +189,10 @@ body .mainBody header #btn1 {
   padding: 1.5% 5%;
   border-radius: 5px;
   margin: 0 0 2% 55%;
+  box-shadow: 0 0 20px black;
+}
+body .mainBody header #btn1:hover {
+  animation: pulse1 3s ease infinite alternate;
 }
 body .mainBody header #btn2 {
   display: flex;
@@ -184,6 +206,10 @@ body .mainBody header #btn2 {
   border-radius: 5px;
   border: 1px solid #F7E486;
   margin: 0 0 0 55%;
+  box-shadow: 0 0 20px black;
+}
+body .mainBody header #btn2:hover {
+  animation: pulse2 3s ease infinite alternate;
 }
 body .mainBody .about {
   margin: 5% 0 0 0;
@@ -299,6 +325,10 @@ body .mainBody #bottomHalf #bottomBtn {
   padding: 1.5% 5%;
   border-radius: 5px;
   margin: 0 auto 5% auto;
+  box-shadow: 0 0 20px black;
+}
+body .mainBody #bottomHalf #bottomBtn:hover {
+  animation: pulse2 3s ease infinite alternate;
 }
 body .mainBody .contactInfo {
   display: flex;
@@ -358,6 +388,10 @@ body .mainBody footer {
   body .mainBody header #logoContainer {
     height: 50vh;
   }
+  body .mainBody header #logoContainer img {
+    height: 10vh;
+    padding: 5% 0 0 0;
+  }
   body .mainBody header h1 {
     margin: auto;
     text-align: center;
@@ -415,7 +449,7 @@ body .mainBody footer {
     width: 98%;
     height: 5vh;
     margin: 0 auto 0 auto;
-    padding: 5% 0 15% 0;
+    padding: 5% 0 12.5% 0;
     font-size: 1rem;
     color: #0A4699;
   }

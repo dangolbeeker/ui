@@ -1,3 +1,21 @@
+@keyframes pulse1 {
+    0%, 100% {
+    background-color: #F7E486;
+  }
+    50% {
+    background-color: lightgrey;
+  }
+}
+
+@keyframes pulse2 {
+    0%, 100% {
+    background-color: #0A4699;
+  }
+    50% {
+    background-color: lightgrey;
+  }
+}
+
 *{
 
 }
@@ -47,12 +65,23 @@ body {
         #btn1 {
             .buttons(1.25rem, #F7E486, #0A4699, 15%, center, center, 1.5% 5%, 5px);
             margin: 0 0 2% 55%;
+            box-shadow: 0 0 20px black; 
+            
+        }
+
+        #btn1:hover {
+            animation: pulse1 3s ease infinite alternate;
         }
 
         #btn2 {
             .buttons(1.25rem, #0A4699, #F7E486, 15%, center, center, 1.5% 5%, 5px);
             border: 1px solid #F7E486;
             margin: 0 0 0 55%;
+            box-shadow: 0 0 20px black;
+        }
+
+        #btn2:hover {
+            animation: pulse2 3s ease infinite alternate;
         }
 
     }
@@ -185,6 +214,12 @@ body {
             #bottomBtn {
                 .buttons(1.25rem, #0A4699, #F7E486, 15%, center, center, 1.5% 5%, 5px);
                 margin: 0 auto 5% auto;
+                box-shadow: 0 0 20px black; 
+                
+            }
+
+            #bottomBtn:hover {
+                animation: pulse2 3s ease infinite alternate;
             }
         }
 
@@ -261,6 +296,11 @@ body {
 
                 #logoContainer {
                     height: 50vh;
+
+                    img {
+                        height: 10vh;
+                        padding: 5% 0 0 0;
+                    }
                 }
 
                 h1 {
@@ -313,7 +353,7 @@ body {
                         width: 98%;
                         height: 5vh;
                         margin: 0 auto 0 auto;
-                        padding: 5% 0 15% 0;
+                        padding: 5% 0 12.5% 0;
                         font-size: 1rem;
                         color: #0A4699;
                         

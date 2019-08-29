@@ -126,6 +126,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@keyframes pulse1 {
+  0%,
+  100% {
+    background-color: #F7E486;
+  }
+  50% {
+    background-color: lightgrey;
+  }
+}
 body {
   font-family: 'Nunito', sans-serif;
 }
@@ -278,6 +287,9 @@ body .mainBody #teamContainer .team .btn {
   border-radius: 5px;
   box-shadow: 0 0 20px black;
 }
+body .mainBody #teamContainer .team .btn:hover {
+  animation: pulse1 3s ease infinite alternate;
+}
 body .mainBody .contactInfo {
   display: flex;
   width: 90%;
@@ -337,6 +349,10 @@ body .mainBody footer {
   }
   body .mainBody header #logoContainer {
     height: 50vh;
+  }
+  body .mainBody header #logoContainer img {
+    height: 10vh;
+    padding: 5% 0 0 0;
   }
   body .mainBody #teamContainer {
     display: flex;
